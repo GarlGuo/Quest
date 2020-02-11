@@ -1,0 +1,256 @@
+{
+  "name": "main",
+  "size": "10,5",
+  "picture": [
+    {
+      "name": "field",
+      "loc": "1,1",
+      "link": ""
+    },
+    {
+      "name": "field",
+      "loc": "2,1",
+      "link": ""
+    },
+    {
+      "name": "field",
+      "loc": "3,1",
+      "link": ""
+    },
+    {
+      "name": "mountain",
+      "loc": "4,1",
+      "link": ""
+    },
+    {
+      "name": "mountain",
+      "loc": "5,1",
+      "link": ""
+    },
+    {
+      "name": "field",
+      "loc": "6,1",
+      "link": ""
+    },
+    {
+      "name": "field",
+      "loc": "7,1",
+      "link": ""
+    },
+    {
+      "name": "mountain",
+      "loc": "8,1",
+      "link": ""
+    },
+    {
+      "name": "mountain",
+      "loc": "9,1",
+      "link": ""
+    },
+    {
+      "name": "mountain",
+      "loc": "10,1",
+      "link": ""
+    },
+    {
+      "name": "grass",
+      "loc": "1,2",
+      "link": ""
+    },
+    {
+      "name": "grass",
+      "loc": "2,2",
+      "link": ""
+    },
+    {
+      "name": "mountain",
+      "loc": "3,2",
+      "link": "branched1"
+    },
+    {
+      "name": "lake",
+      "loc": "4,2",
+      "link": ""
+    },
+    {
+      "name": "mountain",
+      "loc": "5,2",
+      "link": ""
+    },
+    {
+      "name": "snow",
+      "loc": "6,2",
+      "link": ""
+    },
+    {
+      "name": "snow",
+      "loc": "7,2",
+      "link": "branched2"
+    },
+    {
+      "name": "snow",
+      "loc": "8,2",
+      "link": ""
+    },
+    {
+      "name": "grass",
+      "loc": "9,2",
+      "link": ""
+    },
+    {
+      "name": "grass",
+      "loc": "10,2",
+      "link": ""
+    },
+    {
+      "name": "snow",
+      "loc": "1,3",
+      "link": ""
+    },
+    {
+      "name": "snow",
+      "loc": "2,3",
+      "link": ""
+    },
+    {
+      "name": "beach",
+      "loc": "3,3",
+      "link": ""
+    },
+    {
+      "name": "beach",
+      "loc": "4,3",
+      "link": ""
+    },
+    {
+      "name": "beach",
+      "loc": "5,3",
+      "link": ""
+    },
+    {
+      "name": "snow",
+      "loc": "6,3",
+      "link": ""
+    },
+    {
+      "name": "grass",
+      "loc": "7,3",
+      "link": ""
+    },
+    {
+      "name": "snow",
+      "loc": "8,3",
+      "link": ""
+    },
+    {
+      "name": "snow",
+      "loc": "9,3",
+      "link": ""
+    },
+    {
+      "name": "beach",
+      "loc": "10,3",
+      "link": ""
+    },
+    {
+      "name": "beach",
+      "loc": "1,4",
+      "link": ""
+    },
+    {
+      "name": "beach",
+      "loc": "2,4",
+      "link": ""
+    },
+    {
+      "name": "grass",
+      "loc": "3,4",
+      "link": ""
+    },
+    {
+      "name": "snow",
+      "loc": "4,4",
+      "link": ""
+    },
+    {
+      "name": "snow",
+      "loc": "5,4",
+      "link": ""
+    },
+    {
+      "name": "beach",
+      "loc": "6,4",
+      "link": ""
+    },
+    {
+      "name": "beach",
+      "loc": "7,4",
+      "link": "branched3"
+    },
+    {
+      "name": "beach",
+      "loc": "8,4",
+      "link": ""
+    },
+    {
+      "name": "snow",
+      "loc": "9,4",
+      "link": ""
+    },
+    {
+      "name": "grass",
+      "loc": "10,4",
+      "link": ""
+    },
+    {
+      "name": "grass",
+      "loc": "1,5",
+      "link": ""
+    },
+    {
+      "name": "snow",
+      "loc": "2,5",
+      "link": ""
+    },
+    {
+      "name": "snow",
+      "loc": "3,5",
+      "link": ""
+    },
+    {
+      "name": "beach",
+      "loc": "4,5",
+      "link": ""
+    },
+    {
+      "name": "beach",
+      "loc": "5,5",
+      "link": ""
+    },
+    {
+      "name": "beach",
+      "loc": "6,5",
+      "link": ""
+    },
+    {
+      "name": "grass",
+      "loc": "7,5",
+      "link": ""
+    },
+    {
+      "name": "snow",
+      "loc": "8,5",
+      "link": ""
+    },
+    {
+      "name": "snow",
+      "loc": "9,5",
+      "link": ""
+    },
+    {
+      "name": "beach",
+      "loc": "10,5",
+      "link": ""
+    }
+  ]
+}

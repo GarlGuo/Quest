@@ -1,0 +1,5 @@
+{
+  "main_map_instr_to_branch": "You are now exploring a branched map. You will return to the main map once you defeat all enemies in this branch map. Good Luck!",
+  "branch_map_instr": "You are now in a branch map. Picking up weapons and foods as soon as possible. You will return to the main map immediately once you have defeated all enemies here.",
+  "main_map_else": "Enemies are attacking villages and defeating them! You will find weapons and foods are quite helpful and pick up then on your adventure"
+}

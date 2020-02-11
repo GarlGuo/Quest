@@ -1,0 +1,21 @@
+[
+  {
+    "name": "dagger",
+    "description": "Pop like Mick Jagger, pull up the dagger!",
+    "strength": 10,
+    "gainables": []
+  },
+  {
+    "name": "jade sword",
+    "description": "In order to arcade, you need a sword green like jade!",
+    "strength": 20,
+    "gainables": [
+      {
+        "name": "divine punishment",
+        "strength": 35,
+        "cd": 1,
+        "description": "I am the representative of the goods!"
+      }
+    ]
+  }
+]

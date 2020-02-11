@@ -1,0 +1,23 @@
+[
+  {
+    "name": "bread",
+    "description": "This bread is smiling at you and wants to be eaten!.",
+    "strength": 20,
+    "health": 20,
+    "gainables": []
+  },
+  {
+    "name": "Coffee",
+    "description": "Who doesn't want to enjoy this cute coffee?.",
+    "strength": 30,
+    "health": 20,
+    "gainables": [
+      {
+        "name": "fire",
+        "description": "Fire is the natural tools to defeat evils",
+        "cd": 1,
+        "strength": 35
+      }
+    ]
+  }
+]

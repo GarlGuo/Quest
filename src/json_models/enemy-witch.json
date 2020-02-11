@@ -1,0 +1,27 @@
+{
+  "name": "witch",
+  "description": "Witch lives in a cave and she usually stays inside forest.\n Be ware of her magic powers!",
+  "HP": 50,
+  "level": 3,
+  "experience": 40,
+  "skills": [
+    {
+      "name": "fire ball",
+      "strength": 30,
+      "probability": 0.4
+    },
+    {
+      "name": "curses",
+      "strength": 20,
+      "probability": 1.0
+    }
+  ],
+  "gainable": [
+    {
+      "name": "divine trial",
+      "description": "The final day has come and all evils will be purified",
+      "cd": 2,
+      "strength": 40
+    }
+  ]
+}
