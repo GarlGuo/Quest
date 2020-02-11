@@ -1,0 +1,5 @@
+B _build
+B +threads
+PKG yojson
+PKG ANSITerminal
+PKG oUnit

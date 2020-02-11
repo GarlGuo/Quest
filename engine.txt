@@ -1,0 +1,73 @@
+@author Wentao Guo (wg247)
+
+The following functions are defined in engine.ml are useful:
+
+/** 
+when player is in the main map, this method will check the existance of 
+any branch map on player's current location and potentially 
+transfer player to branch map 
+*/
+val transfer_player_to_branch_map: state -> unit
+
+/**
+when player is in the branch map, this method will check whether player has 
+already finished exploration on this branch map and if so, the player will be
+transfer back to the main map
+*/
+val transfer_player_to_main_map: state -> unit
+
+
+!!!  the above methods should be called after every move player had made   !!!
+
+/**
+a tuple in the format of [food name list], [weapon name list] on player's 
+current location.
+
+!!! Both lists can potentially be empty !!!
+*/
+val check_item_on_player_ground: state -> string list * string list
+
+/**
+equip weapon on player's current location, if any, to the first empty slot in
+player's weapon inventory
+*/
+val equip_weapon_in_current_loc: state -> unit
+
+
+/**
+take food on player's current location, if any, to the first empty slot in
+player's food inventory
+*/
+val take_one_food_in_current_location: state -> unit
+
+
+/**
+eat one food at [index] pos of the player's food inventory 
+*/
+val eat_one_food_in_inventory: state -> int -> unit
+
+
+/**
+delete enemy in player's current location
+*/
+val delete_one_enemy_from_state: state -> unit
+
+
+/**
+the list of (col, row) which each represents an entrance to branch map
+*/
+val list_of_entrance_loc_to_branch_map: state -> (int * int) list
+
+/**
+drop the weapon at pos [index] of weapon inventory to player's current location
+
+ex: 
+if the weapon inventory is [|Null; Null; dagger|]
+drop_one_weapon_to_current_location s 2 drops the dagger
+*/
+val drop_one_weapon_to_current_location: state -> int -> unit
+
+/**
+drop the food at pos [index] of food inventory to player's current location
+*/
+val drop_one_food_to_current_location: state -> int -> unit

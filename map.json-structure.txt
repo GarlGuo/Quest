@@ -1,0 +1,8 @@
+@author Michael Zhou 
+@netid mgz27
+
+The following is the structure of map.json:
+
+size: (*the size of the map*)
+  rows: int (*# of rows in the map*)
+  cols: int (*# of rows in the map*)
