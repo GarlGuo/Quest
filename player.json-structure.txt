@@ -1,0 +1,52 @@
+@author Michael Zhou 
+@netid mgz27
+
+The following is the structure of player.json:
+
+1) location: (*initial location of the player*)
+  row: int
+  col: int
+
+2) level: int (*initial level of the player*)
+
+3) strength: int (*initial strength of player*)
+
+4) health: int (*initial health of player*)
+
+5) keys: string list (*keyboard buttons that control the players' movements,
+e.g. ["left", "right", "up", "down"]*)
+
+------------------------------------------------------------------------
+The actual player state also contains the following values, in addition to the
+values defined in the json: 
+
+1) experience: int (*experience value of player*)
+
+2) weapons: weapon list (*list of weapon items initially placed in the map.
+   A weapon is defined as: *)
+weapon: 
+  location: (*initial location of the item when map is loaded*)
+    row: int 
+    col: int 
+
+3) map_state : {
+  weapons: weapon list
+  foods: food list
+}
+(*where a food object is defined as: *)
+food: 
+  location: (*initial location of the item when map is loaded*)
+    row: int 
+    col: int 
+  strength: int (*amount of gain in strength*)
+  health: int (*amount of gain in health*)
+
+Each food, weapon, and enemy has a unique id number, indexed from 0.
+This allows us to easily generate huge quantities of foods, weapons, and 
+enemies. They are not specified in the json. 
+
+In order to advance to the next level, a player needs an experience of 
+(player's current level) * 100 or above for a single level. 
+The maximum strength and health of a player is 100. Once a player advances to 
+the next level, his experience resets to 
+(current experience level) mod ((player's current level) * 100).
