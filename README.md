@@ -5,7 +5,7 @@
 IMPORTANT:
 Currently, I am modifying the dependencies between each the backend and frontend.
 
-************************************   MakeFile WILL NOT work at this moment. ******************************************
+************************************   MakeFile will NOT work at this moment. ******************************************
 
 However, on each file in src, I have commented out first several line but actually,
 there are preprocessor commands for toplevel (like OCaml utop). 
@@ -29,7 +29,7 @@ in utop.
 This is an adventure game mainly implemented in OCaml (for game engine and backend models) and Python (for converting images to JSON files)
 
 ************************************************************************************************************************
-Please ignore the instructions on MakeFile currently.
+***Please ignore these instructions on MakeFile currently.***
 MakeFile:
 
 'make docs' will generate all documentations for OCaml's implementation in html form.
@@ -37,6 +37,7 @@ MakeFile:
 'make build' will build the binary files for OCaml codes.
 
 'make play' will launch the game.
+
 ************************************************************************************************************************
 
 
