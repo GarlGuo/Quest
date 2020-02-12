@@ -1,3 +1,19 @@
+**************************************************************************************************************************
+IMPORTANT:
+Currently, I am modifying the dependencies between each the backend and frontend.
+
+************************************   MakeFile WILL NOT work at this moment. ********************************************
+
+However, on each file in src, I have commented out first several line but actually,
+there are preprocessor commands for toplevel (like OCaml utop). 
+To initiate the game, you can open the src/user_interface/gui.ml, uncomment the preprocessor commands and enter 
+#use "gui.ml" in utop.
+
+**************************************************************************************************************************
+
+
+
+
 How to install:
 1.make build to compile 
 2.make play to play
