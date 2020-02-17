@@ -2,6 +2,7 @@
 @author: Ruiqi Song, Wentao Guo, Michael Zhou
 ************************************************************************************************************************
 MakeFile:
+
 ```make checkenv```  will check all dependencies and the running environment.
 
 ```make play```  will launch the game.
