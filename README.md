@@ -17,7 +17,7 @@ Load single file to OCaml TopLevel:
 
 First, open the directory in which the file exists.
 
-Then, open OCaml TopLevel (like utop) and enter ```#use 'some file.ml```.
+Then, open OCaml TopLevel (like utop) and enter ```#use "some file.ml"```.
 
 For example, to load ```src/engine/engine.ml``` to the TopLevel. 
 You need to open ```src/engine``` and enter ```#use "engine.ml"``` in OCaml TopLevel.
