@@ -1,17 +1,6 @@
-#directory "_build";;
-#require "graphics";;
 #thread;;
-#require "threads";;
+#require "graphics";;
 #require "threads.posix";;
 #require "yojson";;
-#load_rec "enemy.cmo";;
-#load "maps.cmo";;
-#load_rec "player.cmo";;
-#load_rec "weapons.cmo";;
-#load_rec "foods.cmo";;
-#load "engine.cmo";;
-#load "color_convert.cmo";;
-#load "map_builder.cmo";;
-#load "gui.cmo";;
 
 

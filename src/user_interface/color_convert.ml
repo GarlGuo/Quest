@@ -1,6 +1,6 @@
-(* #require "yojson";;
+#require "yojson";;
 #require "graphics";;
-#cd "../json_models" *)
+#cd "../json_models"
 
 
 open Graphics

@@ -1,4 +1,4 @@
-(* #require "graphics";;
+#require "graphics";;
 #require "yojson";;
 #cd "../json_models";;
 #mod_use "../user_interface/color_convert.ml";;
@@ -8,7 +8,7 @@
 #mod_use "../game_models/foods.ml";;
 #mod_use "../game_models/weapons.ml";;
 #mod_use "../engine/builder.ml";;
-#mod_use "../engine/engine.ml";; *)
+#mod_use "../engine/engine.ml";;
 
 open Graphics
 open Yojson.Basic.Util

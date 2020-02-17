@@ -1,9 +1,33 @@
+#require "ounit2";;
+#require "yojson";;
+#cd "src/json_models";;
+#mod_use "../../src/game_models/maps.ml";;
+#mod_use "../../src/game_models/player.ml";;
+#mod_use "../../src/game_models/enemy.ml";;
+#mod_use "../../src/game_models/foods.ml";;
+#mod_use "../../src/game_models/weapons.ml";;
+#mod_use "../../src/engine/builder.ml";;
+#mod_use "../../src/engine/engine.ml";;
+
+(* #require "ounit2";;
+#require "yojson";;
+#cd "../src/json_models";;
+#mod_use "../../src/game_models/maps.ml";;
+#mod_use "../../src/game_models/player.ml";;
+#mod_use "../../src/game_models/enemy.ml";;
+#mod_use "../../src/game_models/foods.ml";;
+#mod_use "../../src/game_models/weapons.ml";;
+#mod_use "../../src/engine/builder.ml";;
+#mod_use "../../src/engine/engine.ml";; *)
+
+
 open OUnit2
+open Maps
 open Player
 open Enemy
+open Builder
 open Engine
 open Foods
-open Maps
 open Weapons
 
 (**Test Plan: 

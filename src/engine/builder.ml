@@ -1,9 +1,9 @@
-(* #require "yojson";;
+#require "yojson";;
 #mod_use "../game_models/maps.ml";;
 #mod_use "../game_models/player.ml";;
 #mod_use "../game_models/enemy.ml";;
 #mod_use "../game_models/foods.ml";;
-#mod_use "../game_models/weapons.ml";; *)
+#mod_use "../game_models/weapons.ml";;
 
 open Maps
 open Player

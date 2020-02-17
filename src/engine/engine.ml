@@ -1,11 +1,11 @@
-(* #require "yojson";;
+#require "yojson";;
 #cd "../json_models";;
 #mod_use "../game_models/maps.ml";;
 #mod_use "../game_models/player.ml";;
 #mod_use "../game_models/enemy.ml";;
 #mod_use "../game_models/foods.ml";;
 #mod_use "../game_models/weapons.ml";;
-#mod_use "../engine/builder.ml";; *)
+#mod_use "../engine/builder.ml";;
 
 open Enemy
 open Player

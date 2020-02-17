@@ -1,11 +1,7 @@
-<<<<<<< HEAD:src/game_models/player.ml
-(* #mod_use "maps.ml";; *)
+#mod_use "maps.ml";;
 
 open Maps
 
-=======
-(** [P] is the interface for player*)
->>>>>>> 99df40a2dfd7af031496647d620c12498458826d:_build/player.ml
 module type P = sig
 
   (** The abstract type of values representing a player's skill. *)

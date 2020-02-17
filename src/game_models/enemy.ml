@@ -1,4 +1,4 @@
-(* #mod_use "player.ml";; *)
+#mod_use "player.ml";;
 
 open Player
 
