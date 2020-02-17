@@ -24,13 +24,13 @@ You need to open ```src/engine``` and enter ```#use "engine.ml"``` in OCaml TopL
 
 
 ************************************************************************************************************************
-This is an adventure game mainly implemented in OCaml (for game engine and backend models) and Python (for converting images to JSON files). The Python Codes are not uploaded into this repository. However, all generated JSON files (which each represents a
-picture) are contained in ```src/json_models```
+This is an adventure game mainly implemented in OCaml (for backend models, game engine and GUI) and Python (for converting images to JSON files). The Python Codes are ***NOT*** uploaded into this repository. 
+However, all generated JSON files (which each represents a picture) are contained in ```src/json_models```
 
 During the game, a player can move throughout the map by pressing '***w*** ***a*** ***s*** ***d***' keys. The Player could also pick up or drop food and weapons in their current locations. The Player could gain skills by equipping weapons, eating food, and defeating enemies. Each skill has a cooling time and the player could use it when it is available. The wining condition is that the player defeats all enemies in all maps. 
 
 The storm-like icon in map represents a branched map. Once all enemies in one branched map have been defeated, the player will return to the main map and that branched map will be removed.
 
-For more detailed info of this game, please refer to the ***player manual.pdf***
+For more detailed info of this game instructions, please refer to the ***player manual.pdf***
 
 Enjoy your adventure in this game!
