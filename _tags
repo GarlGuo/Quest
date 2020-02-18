@@ -1,3 +1,3 @@
-true: package(oUnit),package(yojson),package(ANSITerminal),package(graphics)
+true: package(oUnit),package(yojson),package(graphics)
 <gui.ml>: thread
 <gui.{native,byte}>: thread
