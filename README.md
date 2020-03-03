@@ -33,4 +33,6 @@ The storm-like icon in map represents a branched map. Once all enemies in one br
 
 For more detailed info of this game instructions, please refer to the ***player manual.pdf***
 
+There are some game screenshots in the ***'game screenshot'*** folder.
+
 Enjoy your adventure in this game!
