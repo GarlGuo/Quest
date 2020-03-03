@@ -1,7 +1,10 @@
 # Quest
 @author: 
+
 Ruiqi Song @email: rs927@cornell.edu  
+
 Wentao Guo @email: wg247@cornell.edu
+
 Michael Zhou @email: mgz27@cornell.edu
 
 ************************************************************************************************************************
