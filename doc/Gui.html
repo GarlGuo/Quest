@@ -1,0 +1,821 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link rel="previous" href="Map_builder.html">
+<link rel="next" href="Builder.html">
+<link rel="Up" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Index of module types" rel=Appendix href="index_module_types.html">
+<link title="Engine" rel="Chapter" href="Engine.html">
+<link title="Player" rel="Chapter" href="Player.html">
+<link title="Foods" rel="Chapter" href="Foods.html">
+<link title="Weapons" rel="Chapter" href="Weapons.html">
+<link title="Maps" rel="Chapter" href="Maps.html">
+<link title="Enemy" rel="Chapter" href="Enemy.html">
+<link title="Color_convert" rel="Chapter" href="Color_convert.html">
+<link title="Map_builder" rel="Chapter" href="Map_builder.html">
+<link title="Gui" rel="Chapter" href="Gui.html">
+<link title="Builder" rel="Chapter" href="Builder.html">
+<link title="Main" rel="Chapter" href="Main.html"><title>Gui</title>
+</head>
+<body>
+<div class="navbar"><a class="pre" href="Map_builder.html" title="Map_builder">Previous</a>
+&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;<a class="post" href="Builder.html" title="Builder">Next</a>
+</div>
+<h1>Module <a href="type_Gui.html">Gui</a></h1>
+
+<pre><span id="MODULEGui"><span class="keyword">module</span> Gui</span>: <code class="code">sig</code> <a href="Gui.html">..</a> <code class="code">end</code></pre><div class="info module top">
+<div class="info-desc">
+<p>Load this file to uTop:
+    1. uncomment the following preprocessor commands 
+    2. comment out all commands above
+    3. enter '#use "gui.ml"' in utop</p>
+</div>
+</div>
+<hr width="100%">
+
+<pre><code><span id="TYPEstage"><span class="keyword">type</span> <code class="type"></code>stage</span> = </code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTstage.Combat"><span class="constructor">Combat</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTstage.Normal"><span class="constructor">Normal</span></span></code></td>
+
+</tr></table>
+
+<div class="info ">
+<div class="info-desc">
+<p>The abstract type of values representing stage of GUI game</p>
+</div>
+</div>
+
+
+<pre><code><span id="TYPEbox"><span class="keyword">type</span> <code class="type"></code>box</span> = </code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTbox.Action_button"><span class="constructor">Action_button</span></span> <span class="keyword">of</span> <code class="type">(int * int * int * int) * (string * string)</code></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTbox.Action_box"><span class="constructor">Action_box</span></span> <span class="keyword">of</span> <code class="type">(int * int * int * int) * (string * int)</code></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTbox.Dialog_sense"><span class="constructor">Dialog_sense</span></span> <span class="keyword">of</span> <code class="type">string</code></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTbox.Bnone"><span class="constructor">Bnone</span></span></code></td>
+
+</tr></table>
+
+<div class="info ">
+<div class="info-desc">
+<p>The abstract type of values representing interactive events</p>
+</div>
+</div>
+
+
+<pre><code><span id="TYPEtrigger"><span class="keyword">type</span> <code class="type"></code>trigger</span> = </code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTtrigger.Guide"><span class="constructor">Guide</span></span> <span class="keyword">of</span> <code class="type">string</code></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTtrigger.Command"><span class="constructor">Command</span></span> <span class="keyword">of</span> <code class="type">string</code></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTtrigger.Attack"><span class="constructor">Attack</span></span> <span class="keyword">of</span> <code class="type">string</code></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTtrigger.Next_con"><span class="constructor">Next_con</span></span> <span class="keyword">of</span> <code class="type">string</code></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTtrigger.Item"><span class="constructor">Item</span></span> <span class="keyword">of</span> <code class="type">string * int</code></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTtrigger.Order"><span class="constructor">Order</span></span> <span class="keyword">of</span> <code class="type">string * string</code></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTtrigger.Tnone"><span class="constructor">Tnone</span></span></code></td>
+
+</tr></table>
+
+<div class="info ">
+<div class="info-desc">
+<p>The abstract type of values representing triggers of each interactive 
+    events</p>
+</div>
+</div>
+
+
+<pre><code><span id="TYPEitem_ground"><span class="keyword">type</span> <code class="type"></code>item_ground</span> = </code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTitem_ground.None"><span class="constructor">None</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTitem_ground.Weapon"><span class="constructor">Weapon</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTitem_ground.Food"><span class="constructor">Food</span></span></code></td>
+
+</tr></table>
+
+<div class="info ">
+<div class="info-desc">
+<p>The abstract type of values representing items on the ground</p>
+</div>
+</div>
+
+
+<pre><code><span id="TYPEclist"><span class="keyword">type</span> <code class="type"></code>clist</span> = {</code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span class="keyword">mutable&nbsp;</span><span id="TYPEELTclist.fbutton">fbutton</span>&nbsp;: <code class="type"><a href="Gui.html#TYPEbox">box</a> list</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span class="keyword">mutable&nbsp;</span><span id="TYPEELTclist.dialog">dialog</span>&nbsp;: <code class="type"><a href="Gui.html#TYPEbox">box</a></code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span class="keyword">mutable&nbsp;</span><span id="TYPEELTclist.irefresh">irefresh</span>&nbsp;: <code class="type">bool</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span class="keyword">mutable&nbsp;</span><span id="TYPEELTclist.difficulty">difficulty</span>&nbsp;: <code class="type">string</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span class="keyword">mutable&nbsp;</span><span id="TYPEELTclist.enemy_to_combat">enemy_to_combat</span>&nbsp;: <code class="type">string</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span class="keyword">mutable&nbsp;</span><span id="TYPEELTclist.dialog_in_progress">dialog_in_progress</span>&nbsp;: <code class="type">bool</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span class="keyword">mutable&nbsp;</span><span id="TYPEELTclist.item_selected">item_selected</span>&nbsp;: <code class="type">(string * int * string) option</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span class="keyword">mutable&nbsp;</span><span id="TYPEELTclist.item_ground">item_ground</span>&nbsp;: <code class="type">bool</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span class="keyword">mutable&nbsp;</span><span id="TYPEELTclist.message_display">message_display</span>&nbsp;: <code class="type">string</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span class="keyword">mutable&nbsp;</span><span id="TYPEELTclist.skills">skills</span>&nbsp;: <code class="type">string list</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span class="keyword">mutable&nbsp;</span><span id="TYPEELTclist.player_level">player_level</span>&nbsp;: <code class="type">int</code>;</code></td>
+
+</tr></table>
+}
+
+<div class="info ">
+<div class="info-desc">
+<p><code class="code">clist</code> represents GUI's information resources</p>
+</div>
+</div>
+
+
+<pre><code><span id="TYPEcd_skill"><span class="keyword">type</span> <code class="type"></code>cd_skill</span> = {</code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span class="keyword">mutable&nbsp;</span><span id="TYPEELTcd_skill.fire">fire</span>&nbsp;: <code class="type">int</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span class="keyword">mutable&nbsp;</span><span id="TYPEELTcd_skill.trial">trial</span>&nbsp;: <code class="type">int</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span class="keyword">mutable&nbsp;</span><span id="TYPEELTcd_skill.punishment">punishment</span>&nbsp;: <code class="type">int</code>;</code></td>
+
+</tr></table>
+}
+
+<div class="info ">
+<div class="info-desc">
+<p><code class="code">cd_skill</code> represents player's gainable skills cool down time</p>
+</div>
+</div>
+
+
+<pre><span id="EXCEPTIONNot_such_enemy"><span class="keyword">exception</span> Not_such_enemy</span> <span class="keyword">of</span> <code class="type">string</code></pre>
+<div class="info ">
+<div class="info-desc">
+<p><code class="code">Not_such_enemy</code> is raised when there is an invalid enemy name</p>
+</div>
+</div>
+
+<pre><span id="VALcplace"><span class="keyword">val</span> cplace</span> : <code class="type"><a href="Gui.html#TYPEclist">clist</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">cplace</code> represents the initial display information when game starts,
+   and updates of information will be stored here</p>
+</div>
+</div>
+
+<pre><span id="VALcd_store"><span class="keyword">val</span> cd_store</span> : <code class="type"><a href="Gui.html#TYPEcd_skill">cd_skill</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">cd_store</code> is the default player's skill state</p>
+</div>
+</div>
+
+<pre><span id="VALlblue"><span class="keyword">val</span> lblue</span> : <code class="type">Graphics.color</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">lblue</code> is color light blue</p>
+</div>
+</div>
+
+<pre><span id="VALgrey"><span class="keyword">val</span> grey</span> : <code class="type">Graphics.color</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">grey</code> is color grey</p>
+</div>
+</div>
+
+<pre><span id="VALwhitebox_draw"><span class="keyword">val</span> whitebox_draw</span> : <code class="type">int -> int -> int -> int -> int -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">whitebox_draw a b c d width</code> draws a whitebox with lowerleft point at <code class="code">a,b</code>
+    and upperright point at <code class="code">c,d</code> with linewidth <code class="code">width</code>
+    Require: <code class="code">a b c d width</code> are non-negative ints</p>
+</div>
+</div>
+
+<pre><span id="VALtext_draw_dialog"><span class="keyword">val</span> text_draw_dialog</span> : <code class="type">string -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">text_draw_dialog text</code> draws a text box with <code class="code">text</code> on the given window</p>
+</div>
+</div>
+
+<pre><span id="VALdialog"><span class="keyword">val</span> dialog</span> : <code class="type">string -> Graphics.color array array -> string -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">dialog text npc name</code> draws a dialog box, showing <code class="code">text</code> on screen with 
+    picture <code class="code">npc</code> shown at upper-left corner with <code class="code">name</code>
+    Requires: 
+    <code class="code">npc</code> is a color matrix</p>
+</div>
+</div>
+
+<pre><span id="VALget_player_health"><span class="keyword">val</span> get_player_health</span> : <code class="type">unit -> int * int</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_player_health ()</code> is the max health of the player
+    with the current health</p>
+</div>
+</div>
+
+<pre><span id="VALget_player_level"><span class="keyword">val</span> get_player_level</span> : <code class="type">unit -> int</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_player_level ()</code> is the player's current level</p>
+</div>
+</div>
+
+<pre><span id="VALget_player_expeience"><span class="keyword">val</span> get_player_expeience</span> : <code class="type">unit -> int</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_player_experience ()</code> is the player's current experience</p>
+</div>
+</div>
+
+<pre><span id="VALplayer_reduce_health"><span class="keyword">val</span> player_reduce_health</span> : <code class="type">int -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_player_experience ()</code> is the player's current experience</p>
+</div>
+</div>
+
+<pre><span id="VALexperience_bar"><span class="keyword">val</span> experience_bar</span> : <code class="type">unit -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">experience_bar ()</code> displays the player's current experience on a given 
+   window</p>
+</div>
+</div>
+
+<pre><span id="VALhealth_bar"><span class="keyword">val</span> health_bar</span> : <code class="type">unit -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">health_bar ()</code> displays the player's current health on a given window</p>
+</div>
+</div>
+
+<pre><span id="VALenemy_health_bar"><span class="keyword">val</span> enemy_health_bar</span> : <code class="type"><a href="Enemy.Enemy.html#TYPEt">Enemy.Enemy.t</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">enemy_health_bar e</code> displays the current health of
+   enemy <code class="code">e</code> on a given window</p>
+</div>
+</div>
+
+<pre><span id="VALstatus_bar"><span class="keyword">val</span> status_bar</span> : <code class="type">unit -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">status_bar ()</code> displays the player and his level on the given window</p>
+</div>
+</div>
+
+<pre><span id="VALbox_drawing_helper"><span class="keyword">val</span> box_drawing_helper</span> : <code class="type">unit -> <a href="Gui.html#TYPEbox">box</a> list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">box_drawing_helper ()</code> draws the weapon and food inventory 
+   on the given window</p>
+</div>
+</div>
+
+<pre><span id="VALdraw_inventory"><span class="keyword">val</span> draw_inventory</span> : <code class="type">unit -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">draw_inventory ()</code> draws player's inventory on a given window</p>
+</div>
+</div>
+
+<pre><span id="VALinfo_bar"><span class="keyword">val</span> info_bar</span> : <code class="type">unit -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">infor_bar</code> draws the info bar at lower right corner with string that is
+    stored in cplace.message_display</p>
+</div>
+</div>
+
+<pre><span id="VALdraw_a_image"><span class="keyword">val</span> draw_a_image</span> : <code class="type">Graphics.color array array -> int -> int -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">draw_a_image image x y</code> draws the <code class="code">image</code> on position <code class="code">(x,y)</code> on screen</p>
+</div>
+</div>
+
+<pre><span id="VALstring_cal"><span class="keyword">val</span> string_cal</span> : <code class="type">string -> Graphics.color -> int -> int -> int -> int -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">string_cal text tcolor x y w h</code>
+   prints text with <code class="code">color</code> and text-color <code class="code">tcolor</code> in the center of the box
+    with lower-left point at <code class="code">x,y</code> and with width<code class="code">w</code> height <code class="code">h</code></p>
+</div>
+</div>
+
+<pre><span id="VALcreate_button"><span class="keyword">val</span> create_button</span> : <code class="type">string -><br>       Graphics.color -><br>       Graphics.color -> int -> int -> int -> int -> string * string -> <a href="Gui.html#TYPEbox">box</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">create_button text color tcolor x y w h trigger</code> 
+   displays a button with color tcolor in the center of the box
+   with lower-left point at <code class="code">x,y</code> and with width<code class="code">w</code> height <code class="code">h</code>.
+   <code class="code">trigger</code> will be passed to the parser to handle another events.
+   require: <code class="code">text</code> is a non-empty string</p>
+</div>
+</div>
+
+<pre><span id="VALnormal_four_botton"><span class="keyword">val</span> normal_four_botton</span> : <code class="type">unit -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">normal_four_botton ()</code> draws the four botton at lower-right corner and
+    store the interactive event into cplace</p>
+</div>
+</div>
+
+<pre><span id="VALdraw_cd"><span class="keyword">val</span> draw_cd</span> : <code class="type">unit -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">draw_cd()</code> draws the cool down time for advanced skill when the player
+    is in the combat stage</p>
+</div>
+</div>
+
+<pre><span id="VALbotton_drawing_helper"><span class="keyword">val</span> botton_drawing_helper</span> : <code class="type">int -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">botton_draw_helper int</code> draws <code class="code">int</code>-1 botton at the lower right
+    corner, and store these botton as interactive event into cplace
+    Require: <code class="code">int</code> is a int</p>
+</div>
+</div>
+
+<pre><span id="VALcombat_four_botton"><span class="keyword">val</span> combat_four_botton</span> : <code class="type">int -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">combat_four_botton int</code> draws <code class="code">int</code> botton at the lower right
+    corner, and store these botton as interactive event into cplace
+    Require: <code class="code">int</code> is a int</p>
+</div>
+</div>
+
+<pre><span id="VALcombat_botton_helper"><span class="keyword">val</span> combat_botton_helper</span> : <code class="type">unit -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">combat_botton_helper()</code> draws bottons according to number of available
+    skills at the lower-right corner</p>
+</div>
+</div>
+
+<pre><span id="VALfind_enemy_image_data"><span class="keyword">val</span> find_enemy_image_data</span> : <code class="type">string -> <a href="Color_convert.html#TYPEeimage">Color_convert.eimage</a> list -> Graphics.color array array</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">find_enemy_image data name lst</code> is the color matrix of the enemy with
+    <code class="code">name</code>
+    Require: <code class="code">name</code> is a enmey name string,
+    <code class="code">lst</code> is a eimage list</p>
+</div>
+</div>
+
+<pre><span id="VALenemy_list"><span class="keyword">val</span> enemy_list</span> : <code class="type">unit -> <a href="Builder.html#TYPEenemy">Builder.enemy</a> list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">enemy_list()</code> is the list of all enemy in the current map</p>
+</div>
+</div>
+
+<pre><span id="VALget_one_enemy"><span class="keyword">val</span> get_one_enemy</span> : <code class="type">string -> <a href="Builder.html#TYPEenemy">Builder.enemy</a> list -> <a href="Enemy.Enemy.html#TYPEt">Enemy.Enemy.t</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_one_enemy id lst</code> is the enemy with <code class="code">id</code> in the list
+    Requires: <code class="code">id</code> is a string
+    <code class="code">lst</code> is an ememy list
+    Raises: Not_such_enmey there is no enemy with id</p>
+</div>
+</div>
+
+<pre><span id="VALskill_damage"><span class="keyword">val</span> skill_damage</span> : <code class="type">string -> int</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">skill_damage name</code> is the int that is the strength of skill with <code class="code">name</code>
+    or 0 if there is no skill with <code class="code">name</code>
+    Require: <code class="code">name</code> is a string</p>
+</div>
+</div>
+
+<pre><span id="VALenemy_skill_image"><span class="keyword">val</span> enemy_skill_image</span> : <code class="type">string -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">enemy_skill_image name</code> draws the image representing skill with
+    <code class="code">name</code>
+    Require: <code class="code">name</code> is a vaild skill name</p>
+</div>
+</div>
+
+<pre><span id="VALenemy_skill"><span class="keyword">val</span> enemy_skill</span> : <code class="type"><a href="Enemy.Enemy.html#TYPEt">Enemy.Enemy.t</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">enemy_skill t</code> draws a random skill image of enemy <code class="code">t</code>
+    and reduce player's health
+    by the strength of that randomly chosen skill
+    Requires: <code class="code">t</code> is a vaild Enemy.t</p>
+</div>
+</div>
+
+<pre><span id="VALenemy_mon"><span class="keyword">val</span> enemy_mon</span> : <code class="type">string -> bool</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">enemy id</code> is false if that enemy, with <code class="code">id</code>, has a 0 hp, otherwise true
+    Requires: <code class="code">id</code> is a vaild enemy id</p>
+</div>
+</div>
+
+<pre><span id="VALgame_over_mon"><span class="keyword">val</span> game_over_mon</span> : <code class="type">unit -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">game_over_mon ()</code> is unit if the player has a positive health;
+    if player has 0 health, it draws game over dialog box and shut the game
+    down</p>
+</div>
+</div>
+
+<pre><span id="VALskill_image"><span class="keyword">val</span> skill_image</span> : <code class="type">string -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">skill_image name</code> draws the image representing skill with <code class="code">name</code>
+    on the screen
+    Requires: <code class="code">name</code> is a vaild player skill name</p>
+</div>
+</div>
+
+<pre><span id="VALskill_info_helper"><span class="keyword">val</span> skill_info_helper</span> : <code class="type">unit -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">skill_info_helper ()</code> draws all the information bars needed on the screen 
+    including the enemy and the player during combat stage</p>
+</div>
+</div>
+
+<pre><span id="VALenemy_skill_drawing_helper"><span class="keyword">val</span> enemy_skill_drawing_helper</span> : <code class="type">unit -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">enemy_skill_drawing_helper ()</code> draws a randomly chosen skill of the enmey
+    that is stored in cplace on the screen</p>
+</div>
+</div>
+
+<pre><span id="VALskill_helper"><span class="keyword">val</span> skill_helper</span> : <code class="type">string -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">skill_helper name</code> draws the image of skill with <code class="code">name</code> and 
+    reduce the health of enemy that is stpred in cplace according to the 
+    strength of the skill
+    Require: <code class="code">name</code> is a string</p>
+</div>
+</div>
+
+<pre><span id="VALfood_check"><span class="keyword">val</span> food_check</span> : <code class="type">int -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">food_check i</code> checks if the <code class="code">i</code>th item in food inventory is eaten or not
+    ;if not <code class="code">food_check</code> 
+    update the item_selected field to the item in the cplace
+    Require: <code class="code">int</code> is a int that greater then or equal to 0 and less than 3</p>
+</div>
+</div>
+
+<pre><span id="VALweapon_check"><span class="keyword">val</span> weapon_check</span> : <code class="type">int -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">weapon_check i</code> checks if the <code class="code">i</code>th item in weapon inventory
+    is empty or not;if not <code class="code">weapon_check</code> 
+    update the item_selected field to the item in the cplace
+    Require: <code class="code">int</code> is a int that greater then or equal to 0 and less than 3</p>
+</div>
+</div>
+
+<pre><span id="VALitem_check"><span class="keyword">val</span> item_check</span> : <code class="type">string -> int -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">item_check s i</code> checks if the <code class="code">i</code>th item in <code class="code">s</code> inventory
+    is empty or not;
+    Require: <code class="code">int</code> is a int that greater then or equal to 0 and less than 3
+    <code class="code">s</code> is "food" or "weapon"</p>
+</div>
+</div>
+
+<pre><span id="VALdraw_inventory_item_helper"><span class="keyword">val</span> draw_inventory_item_helper</span> : <code class="type">string -> Graphics.color array array</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">draw_inventory_item_helper name</code> is the image representing skill with
+    <code class="code">name</code>
+    Requires: <code class="code">name</code> is availd skill name</p>
+</div>
+</div>
+
+<pre><span id="VALdraw_food"><span class="keyword">val</span> draw_food</span> : <code class="type"><a href="Builder.html#TYPEfood_item">Builder.food_item</a> list -> int -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">draw_food foods int</code> draws the first item of <code class="code">foods</code> at <code class="code">int</code>th
+    slot of the inventory
+    Requires: <code class="code">foods</code> is a food_item list
+    <code class="code">int</code> is grester than or equal to 0 and less then 3</p>
+</div>
+</div>
+
+<pre><span id="VALdraw_weapon"><span class="keyword">val</span> draw_weapon</span> : <code class="type"><a href="Builder.html#TYPEweapon_item">Builder.weapon_item</a> list -> int -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">draw_weapon weapons int</code> draws the first item of <code class="code">weapons</code> at <code class="code">int</code>th
+    slot of the inventory
+    Requires: <code class="code">weapons</code> is a weapon_item list
+    <code class="code">int</code> is grester than or equal to 0 and less then 3</p>
+</div>
+</div>
+
+<pre><span id="VALitem_draw"><span class="keyword">val</span> item_draw</span> : <code class="type">unit -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">item_draw ()</code> draws items in inventory on the screen</p>
+</div>
+</div>
+
+<pre><span id="VALground_probe"><span class="keyword">val</span> ground_probe</span> : <code class="type">unit -> <a href="Gui.html#TYPEitem_ground">item_ground</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">ground_probe()</code> is the item_ground representing what is on the ground.
+    None if nothong on the ground</p>
+</div>
+</div>
+
+<pre><span id="VALfood_full_mon"><span class="keyword">val</span> food_full_mon</span> : <code class="type">unit -> bool</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">food_full_mon ()</code> is true if food inventory is full; false if not full</p>
+</div>
+</div>
+
+<pre><span id="VALweapon_full_mon"><span class="keyword">val</span> weapon_full_mon</span> : <code class="type">unit -> bool</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">weapon_full_mon ()</code> is true if weapon inventory is full;
+    false if not full</p>
+</div>
+</div>
+
+<pre><span id="VALparse"><span class="keyword">val</span> parse</span> : <code class="type"><a href="Gui.html#TYPEtrigger">trigger</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">parse c</code> is unit and it takes in trigger <code class="code">c</code> and perform
+    action on according to the trigger.
+    Requires: <code class="code">c</code> is a trigger</p>
+</div>
+</div>
+
+<pre><span id="VALorder_drop_helper"><span class="keyword">val</span> order_drop_helper</span> : <code class="type">unit -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">order_drop_helper()</code> drop the item that is stored in cplace</p>
+</div>
+</div>
+
+<pre><span id="VALorder_pick_helper"><span class="keyword">val</span> order_pick_helper</span> : <code class="type">unit -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">order_drop_helper()</code> pick the item at player's location 
+    if invenotry is not full</p>
+</div>
+</div>
+
+<pre><span id="VALorder_helper"><span class="keyword">val</span> order_helper</span> : <code class="type">string -> string -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">order_helper c t</code> perform action according to <code class="code">c</code> and <code class="code">t</code>
+    Require: <code class="code">c</code> is one of "dialog","weapon","use" or "drop"
+    <code class="code">t</code> is a string</p>
+</div>
+</div>
+
+<pre><span id="VALtsensor"><span class="keyword">val</span> tsensor</span> : <code class="type">unit -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">tsensor ()</code> pause the game until user press his/her mouse botton</p>
+</div>
+</div>
+
+<pre><span id="VALksensor"><span class="keyword">val</span> ksensor</span> : <code class="type">Graphics.status -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">ksensor status</code> move the player according to key_pressed in <code class="code">status</code>
+    Requires: <code class="code">status</code> is a graphics.status</p>
+</div>
+</div>
+
+<pre><span id="VALaction_button_helper"><span class="keyword">val</span> action_button_helper</span> : <code class="type">Graphics.status -><br>       <a href="Gui.html#TYPEstage">stage</a> -> int * int * int * int -> string * string -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">action_button_helper status stage (x,y,w,h) (c,t)</code> checks is the mouse
+    pressed according to <code class="code">status</code> in the range <code class="code">x,y,x+w,h+y+h</code> and perform
+    the action according to <code class="code">c,t</code>
+    Require: <code class="code">status</code> is Graphics.dtatus
+    <code class="code">stage</code> is a vaild stage
+    <code class="code">x,y,w,h</code> are non-nagative ints
+    <code class="code">c,t</code> are strings</p>
+</div>
+</div>
+
+<pre><span id="VALfensor"><span class="keyword">val</span> fensor</span> : <code class="type"><a href="Gui.html#TYPEstage">stage</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">fensor stage</code> detects the interactive events from keyboard and mouse
+    and perform action according to the events and <code class="code">stage</code>
+    Require: <code class="code">stage</code> is a vaild stage</p>
+</div>
+</div>
+
+<pre><span id="VALclear_screen"><span class="keyword">val</span> clear_screen</span> : <code class="type">unit -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">clear_screen ()</code> clears the screen if irefresh is true</p>
+</div>
+</div>
+
+<pre><span id="VALcd_mon"><span class="keyword">val</span> cd_mon</span> : <code class="type">unit -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">cd_mon()</code> check the cool down time for each skill and update it in cplace</p>
+</div>
+</div>
+
+<pre><span id="VALskill_mon"><span class="keyword">val</span> skill_mon</span> : <code class="type">unit -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">skill_mon()</code> check the  
+    player skill and update it in cplace</p>
+</div>
+</div>
+
+<pre><span id="VALlevel_mon"><span class="keyword">val</span> level_mon</span> : <code class="type">int -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">level_mon()</code> check the player level draws a dialog box
+    when player got upgraded</p>
+</div>
+</div>
+
+<pre><span id="VALcombat"><span class="keyword">val</span> combat</span> : <code class="type">string -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">combat id</code> is the main function for combat, it start a combat with
+    enemy with <code class="code">id</code> and draw information on the screen
+    Requires: <code class="code">id</code> is a vaild enemy id</p>
+</div>
+</div>
+
+<pre><span id="VALcombat_mon"><span class="keyword">val</span> combat_mon</span> : <code class="type">unit -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">combat_mon()</code> checks the emeny in combat field in cplace and 
+    start a combat when the field is not "none"</p>
+</div>
+</div>
+
+<pre><span id="VALground_mon"><span class="keyword">val</span> ground_mon</span> : <code class="type">unit -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">ground_mon()</code> checks the if a item is on the ground and updated it
+    in cplace.</p>
+</div>
+</div>
+
+<pre><span id="VALenemy_loc_mon"><span class="keyword">val</span> enemy_loc_mon</span> : <code class="type">unit -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">enemy_loc_mon()</code> checks the is emeny at the same loction as the player
+    and updated in cplace</p>
+</div>
+</div>
+
+<pre><span id="VALwin_mon"><span class="keyword">val</span> win_mon</span> : <code class="type">unit -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">win_mon()</code> checks the winning condition fo the game and shut the game down
+    when the condition is satisfied</p>
+</div>
+</div>
+
+<pre><span id="VALrefresh_draw"><span class="keyword">val</span> refresh_draw</span> : <code class="type">unit -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">refresh_draw()</code> draw important information during Normal stage</p>
+</div>
+</div>
+
+<pre><span id="VALmain"><span class="keyword">val</span> main</span> : <code class="type">unit -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">main()</code> is the main function during normal stage. It draws information
+    and checks for every condition and variable in the game</p>
+</div>
+</div>
+
+<pre><span id="VALbeginning"><span class="keyword">val</span> beginning</span> : <code class="type">unit -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">beginning ()</code> draws logo and the beginning interface and start the game</p>
+</div>
+</div>
+
+<pre><span id="VALinit"><span class="keyword">val</span> init</span> : <code class="type">unit -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">init()</code> opens the graph and initialize map image resourse</p>
+</div>
+</div>
+</body></html>

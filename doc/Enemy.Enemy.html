@@ -1,0 +1,297 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link rel="Up" href="Enemy.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Index of module types" rel=Appendix href="index_module_types.html">
+<link title="Engine" rel="Chapter" href="Engine.html">
+<link title="Player" rel="Chapter" href="Player.html">
+<link title="Foods" rel="Chapter" href="Foods.html">
+<link title="Weapons" rel="Chapter" href="Weapons.html">
+<link title="Maps" rel="Chapter" href="Maps.html">
+<link title="Enemy" rel="Chapter" href="Enemy.html">
+<link title="Color_convert" rel="Chapter" href="Color_convert.html">
+<link title="Map_builder" rel="Chapter" href="Map_builder.html">
+<link title="Gui" rel="Chapter" href="Gui.html">
+<link title="Builder" rel="Chapter" href="Builder.html">
+<link title="Main" rel="Chapter" href="Main.html"><title>Enemy.Enemy</title>
+</head>
+<body>
+<div class="navbar">&nbsp;<a class="up" href="Enemy.html" title="Enemy">Up</a>
+&nbsp;</div>
+<h1>Module <a href="type_Enemy.Enemy.html">Enemy.Enemy</a></h1>
+
+<pre><span id="MODULEEnemy"><span class="keyword">module</span> Enemy</span>: <code class="code">sig</code> <a href="Enemy.Enemy.html">..</a> <code class="code">end</code></pre><div class="info module top">
+<div class="info-desc">
+<p><code class="code">Enemy</code> is the abstraction type representating an enemy</p>
+</div>
+</div>
+<hr width="100%">
+<p>Documentation in EnemySig</p>
+
+<pre><span id="EXCEPTIONUnknownSkill"><span class="keyword">exception</span> UnknownSkill</span> <span class="keyword">of</span> <code class="type">string</code></pre>
+<div class="info ">
+<div class="info-desc">
+<p>The exception type of an unknown skill.</p>
+</div>
+</div>
+
+<pre><code><span id="TYPEskills"><span class="keyword">type</span> <code class="type"></code>skills</span> = {</code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTskills.skill_name">skill_name</span>&nbsp;: <code class="type">string</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTskills.skill_probability">skill_probability</span>&nbsp;: <code class="type">float</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span class="keyword">mutable&nbsp;</span><span id="TYPEELTskills.skill_strength">skill_strength</span>&nbsp;: <code class="type">int</code>;</code></td>
+
+</tr></table>
+}
+
+<div class="info ">
+<div class="info-desc">
+<p>The abstract type of values representing an enemy's skill.</p>
+</div>
+</div>
+
+
+<pre><code><span id="TYPEt"><span class="keyword">type</span> <code class="type"></code>t</span> = {</code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTt.id">id</span>&nbsp;: <code class="type">string</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTt.name">name</span>&nbsp;: <code class="type">string</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTt.descr">descr</span>&nbsp;: <code class="type">string</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTt.max_hp">max_hp</span>&nbsp;: <code class="type">int</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTt.gainables">gainables</span>&nbsp;: <code class="type"><a href="Player.Player.html#TYPEskill">Player.Player.skill</a> list</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTt.exp">exp</span>&nbsp;: <code class="type">int</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTt.skills">skills</span>&nbsp;: <code class="type"><a href="Enemy.Enemy.html#TYPEskills">skills</a> list</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTt.initial_hp">initial_hp</span>&nbsp;: <code class="type">int</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span class="keyword">mutable&nbsp;</span><span id="TYPEELTt.count">count</span>&nbsp;: <code class="type">int</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span class="keyword">mutable&nbsp;</span><span id="TYPEELTt.level">level</span>&nbsp;: <code class="type">int</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span class="keyword">mutable&nbsp;</span><span id="TYPEELTt.pos">pos</span>&nbsp;: <code class="type">int * int</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span class="keyword">mutable&nbsp;</span><span id="TYPEELTt.hp">hp</span>&nbsp;: <code class="type">int</code>;</code></td>
+
+</tr></table>
+}
+
+<div class="info ">
+<div class="info-desc">
+<p>The abstract type of values representing an enemy.</p>
+</div>
+</div>
+
+
+<pre><span id="VALhealth_increment"><span class="keyword">val</span> health_increment</span> : <code class="type">int</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">health_increment</code> is the health incr. 
+     to this enemy once other enemy is killed</p>
+</div>
+</div>
+
+<pre><span id="VALget_id"><span class="keyword">val</span> get_id</span> : <code class="type"><a href="Enemy.Enemy.html#TYPEt">t</a> -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_id e</code> returns the id # of the enemy <code class="code">e</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALget_name"><span class="keyword">val</span> get_name</span> : <code class="type"><a href="Enemy.Enemy.html#TYPEt">t</a> -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_name e</code> returns the name of the enemy <code class="code">e</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALget_description"><span class="keyword">val</span> get_description</span> : <code class="type"><a href="Enemy.Enemy.html#TYPEt">t</a> -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_description e</code> returns the description of the enemy <code class="code">e</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALget_experience"><span class="keyword">val</span> get_experience</span> : <code class="type"><a href="Enemy.Enemy.html#TYPEt">t</a> -> int</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_experience e</code> returns the experience amount of the enemy <code class="code">e</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALget_level"><span class="keyword">val</span> get_level</span> : <code class="type"><a href="Enemy.Enemy.html#TYPEt">t</a> -> int</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_level e</code> returns the current level that the enemy <code class="code">e</code> is on.</p>
+</div>
+</div>
+
+<pre><span id="VALget_hp"><span class="keyword">val</span> get_hp</span> : <code class="type"><a href="Enemy.Enemy.html#TYPEt">t</a> -> int</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_hp e</code> returns the current hp amount of the enemy <code class="code">e</code></p>
+</div>
+</div>
+
+<pre><span id="VALget_pos"><span class="keyword">val</span> get_pos</span> : <code class="type"><a href="Enemy.Enemy.html#TYPEt">t</a> -> int * int</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_pos e</code> returns the current position of the enemy <code class="code">e</code></p>
+</div>
+</div>
+
+<pre><span id="VALget_max_hp"><span class="keyword">val</span> get_max_hp</span> : <code class="type"><a href="Enemy.Enemy.html#TYPEt">t</a> -> int</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_max_hp e</code> returns the maximum hp of the enemy <code class="code">e</code></p>
+</div>
+</div>
+
+<pre><span id="VALget_gainable_skill"><span class="keyword">val</span> get_gainable_skill</span> : <code class="type"><a href="Enemy.Enemy.html#TYPEt">t</a> -> <a href="Player.Player.html#TYPEskill">Player.Player.skill</a> list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_gainable_skill t</code> is the gainable player skills list</p>
+</div>
+</div>
+
+<pre><span id="VALreduce_hp"><span class="keyword">val</span> reduce_hp</span> : <code class="type"><a href="Enemy.Enemy.html#TYPEt">t</a> -> int -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">reduce_hp e d</code> reduces the enemy's hp amount by <code class="code">d</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALget_all_skills_name"><span class="keyword">val</span> get_all_skills_name</span> : <code class="type"><a href="Enemy.Enemy.html#TYPEt">t</a> -> string list</code></pre>
+<pre><span id="VALget_all_skills_name_prob_and_strength_to_assoc_list"><span class="keyword">val</span> get_all_skills_name_prob_and_strength_to_assoc_list</span> : <code class="type"><a href="Enemy.Enemy.html#TYPEt">t</a> -> (string * float * int) list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_all_skills_name_prob_and_strength_to_assoc_list e</code> returns 
+       <code class="code">[(n1,p1,s1); (n2,p2,s2); ... ]</code>
+       where <code class="code">ni</code> is the name of an enemy <code class="code">e</code>'s skill at index <code class="code">i</code>, 
+       <code class="code">pi</code> is the skill probability of enemy <code class="code">e</code>'s skill at index <code class="code">i</code>, and <code class="code">si</code> 
+       is the strength of the enemy <code class="code">e</code>'s particular skill at index <code class="code">i</code>,
+        for all <code class="code">i</code> between 1 and <code class="code">List.length s.skills</code>, inclusive.</p>
+</div>
+</div>
+
+<pre><span id="VALget_one_skill_strength_by_name"><span class="keyword">val</span> get_one_skill_strength_by_name</span> : <code class="type"><a href="Enemy.Enemy.html#TYPEt">t</a> -> string -> int</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_all_skills_name e</code> returns a list of all the skill names of 
+       the enemy <code class="code">e</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALsingle_skill_constructor"><span class="keyword">val</span> single_skill_constructor</span> : <code class="type">skill_name:string -><br>       skill_strength:int -> skill_probability:float -> <a href="Enemy.Enemy.html#TYPEskills">skills</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">single_skill_constructor n s p</code> constructs a new skill with the name 
+       <code class="code">n</code>, strength <code class="code">s</code> and skill probability <code class="code">p</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALconstructor"><span class="keyword">val</span> constructor</span> : <code class="type">pos:int * int -><br>       level:int -><br>       exp:int -><br>       hp:int -><br>       id:string -><br>       name:string -><br>       descr:string -><br>       max_hp:int -><br>       skills:<a href="Enemy.Enemy.html#TYPEskills">skills</a> list -><br>       gainables:<a href="Player.Player.html#TYPEskill">Player.Player.skill</a> list -> <a href="Enemy.Enemy.html#TYPEt">t</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">constructor p l exp h id n d max_hp s</code> constructs a new enemy module 
+       located at position <code class="code">p</code> with experience <code class="code">exp</code>, hp <code class="code">hp</code>, id # <code class="code">id</code>, 
+       name <code class="code">n</code>, maximum hp <code class="code">max_hp</code> and a list of skills <code class="code">s</code> at level <code class="code">l</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALincrease_health"><span class="keyword">val</span> increase_health</span> : <code class="type"><a href="Enemy.Enemy.html#TYPEt">t</a> -> int -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">increase_health t hp</code> will increase health <code class="code">hp</code> this enemy has</p>
+</div>
+</div>
+
+<pre><span id="VALincrease_strength"><span class="keyword">val</span> increase_strength</span> : <code class="type"><a href="Enemy.Enemy.html#TYPEt">t</a> -> int -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">increase_strength t s</code> will increase strength <code class="code">s</code> to every skill
+       this enemy <code class="code">t</code> has</p>
+</div>
+</div>
+
+<pre><span id="VALincrease_level"><span class="keyword">val</span> increase_level</span> : <code class="type"><a href="Enemy.Enemy.html#TYPEt">t</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">increase_level t</code> will increase one level of enemy <code class="code">t</code></p>
+</div>
+</div>
+
+<pre><span id="VALstrengthen"><span class="keyword">val</span> strengthen</span> : <code class="type"><a href="Enemy.Enemy.html#TYPEt">t</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">strengthen t</code> will increase the health, strength, and level of this
+       enemy</p>
+</div>
+</div>
+</body></html>

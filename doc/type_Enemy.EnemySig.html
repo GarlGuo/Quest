@@ -1,0 +1,60 @@
+<html><head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Index of module types" rel=Appendix href="index_module_types.html">
+<link title="Engine" rel="Chapter" href="Engine.html">
+<link title="Player" rel="Chapter" href="Player.html">
+<link title="Foods" rel="Chapter" href="Foods.html">
+<link title="Weapons" rel="Chapter" href="Weapons.html">
+<link title="Maps" rel="Chapter" href="Maps.html">
+<link title="Enemy" rel="Chapter" href="Enemy.html">
+<link title="Color_convert" rel="Chapter" href="Color_convert.html">
+<link title="Map_builder" rel="Chapter" href="Map_builder.html">
+<link title="Gui" rel="Chapter" href="Gui.html">
+<link title="Builder" rel="Chapter" href="Builder.html">
+<link title="Main" rel="Chapter" href="Main.html"><title>Enemy.EnemySig</title>
+</head>
+<body>
+<code class="code"><span class="keyword">sig</span><br>
+&nbsp;&nbsp;<span class="keyword">type</span>&nbsp;t<br>
+&nbsp;&nbsp;<span class="keyword">type</span>&nbsp;skills<br>
+&nbsp;&nbsp;<span class="keyword">exception</span>&nbsp;<span class="constructor">UnknownSkill</span>&nbsp;<span class="keyword">of</span>&nbsp;string<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;get_id&nbsp;:&nbsp;<span class="constructor">Enemy</span>.<span class="constructor">EnemySig</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;string<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;get_name&nbsp;:&nbsp;<span class="constructor">Enemy</span>.<span class="constructor">EnemySig</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;string<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;get_description&nbsp;:&nbsp;<span class="constructor">Enemy</span>.<span class="constructor">EnemySig</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;string<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;get_experience&nbsp;:&nbsp;<span class="constructor">Enemy</span>.<span class="constructor">EnemySig</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;int<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;get_all_skills_name&nbsp;:&nbsp;<span class="constructor">Enemy</span>.<span class="constructor">EnemySig</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;string&nbsp;list<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;get_one_skill_strength_by_name&nbsp;:&nbsp;<span class="constructor">Enemy</span>.<span class="constructor">EnemySig</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;string&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;int<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;get_all_skills_name_prob_and_strength_to_assoc_list&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="constructor">Enemy</span>.<span class="constructor">EnemySig</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;(string&nbsp;*&nbsp;float&nbsp;*&nbsp;int)&nbsp;list<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;get_level&nbsp;:&nbsp;<span class="constructor">Enemy</span>.<span class="constructor">EnemySig</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;int<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;get_gainable_skill&nbsp;:&nbsp;<span class="constructor">Enemy</span>.<span class="constructor">EnemySig</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="constructor">Player</span>.<span class="constructor">Player</span>.skill&nbsp;list<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;reduce_hp&nbsp;:&nbsp;<span class="constructor">Enemy</span>.<span class="constructor">EnemySig</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;int&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;unit<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;get_hp&nbsp;:&nbsp;<span class="constructor">Enemy</span>.<span class="constructor">EnemySig</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;int<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;get_pos&nbsp;:&nbsp;<span class="constructor">Enemy</span>.<span class="constructor">EnemySig</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;int&nbsp;*&nbsp;int<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;get_max_hp&nbsp;:&nbsp;<span class="constructor">Enemy</span>.<span class="constructor">EnemySig</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;int<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;single_skill_constructor&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;skill_name:string&nbsp;<span class="keywordsign">-&gt;</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;skill_strength:int&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;skill_probability:float&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="constructor">Enemy</span>.<span class="constructor">EnemySig</span>.skills<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;constructor&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;pos:int&nbsp;*&nbsp;int&nbsp;<span class="keywordsign">-&gt;</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;level:int&nbsp;<span class="keywordsign">-&gt;</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;exp:int&nbsp;<span class="keywordsign">-&gt;</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;hp:int&nbsp;<span class="keywordsign">-&gt;</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;id:string&nbsp;<span class="keywordsign">-&gt;</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;name:string&nbsp;<span class="keywordsign">-&gt;</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;descr:string&nbsp;<span class="keywordsign">-&gt;</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;max_hp:int&nbsp;<span class="keywordsign">-&gt;</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;skills:<span class="constructor">Enemy</span>.<span class="constructor">EnemySig</span>.skills&nbsp;list&nbsp;<span class="keywordsign">-&gt;</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;gainables:<span class="constructor">Player</span>.<span class="constructor">Player</span>.skill&nbsp;list&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="constructor">Enemy</span>.<span class="constructor">EnemySig</span>.t<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;increase_strength&nbsp;:&nbsp;<span class="constructor">Enemy</span>.<span class="constructor">EnemySig</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;int&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;unit<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;increase_health&nbsp;:&nbsp;<span class="constructor">Enemy</span>.<span class="constructor">EnemySig</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;int&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;unit<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;increase_level&nbsp;:&nbsp;<span class="constructor">Enemy</span>.<span class="constructor">EnemySig</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;unit<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;strengthen&nbsp;:&nbsp;<span class="constructor">Enemy</span>.<span class="constructor">EnemySig</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;unit<br>
+<span class="keyword">end</span></code></body></html>

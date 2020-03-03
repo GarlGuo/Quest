@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link rel="Up" href="Foods.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Index of module types" rel=Appendix href="index_module_types.html">
+<link title="Engine" rel="Chapter" href="Engine.html">
+<link title="Player" rel="Chapter" href="Player.html">
+<link title="Foods" rel="Chapter" href="Foods.html">
+<link title="Weapons" rel="Chapter" href="Weapons.html">
+<link title="Maps" rel="Chapter" href="Maps.html">
+<link title="Enemy" rel="Chapter" href="Enemy.html">
+<link title="Color_convert" rel="Chapter" href="Color_convert.html">
+<link title="Map_builder" rel="Chapter" href="Map_builder.html">
+<link title="Gui" rel="Chapter" href="Gui.html">
+<link title="Builder" rel="Chapter" href="Builder.html">
+<link title="Main" rel="Chapter" href="Main.html"><title>Foods.F</title>
+</head>
+<body>
+<div class="navbar">&nbsp;<a class="up" href="Foods.html" title="Foods">Up</a>
+&nbsp;</div>
+<h1>Module type <a href="type_Foods.F.html">Foods.F</a></h1>
+
+<pre><span id="MODULETYPEF"><span class="keyword">module type</span> F</span> = <code class="code">sig</code> <a href="Foods.F.html">..</a> <code class="code">end</code></pre><div class="info modtype top">
+<div class="info-desc">
+<p><code class="code">F</code> is the interface for foods</p>
+</div>
+</div>
+<hr width="100%">
+
+<pre><span id="TYPEfood"><span class="keyword">type</span> <code class="type"></code>food</span> </pre>
+<div class="info ">
+<div class="info-desc">
+<p>The abstract type of values representing foods.</p>
+</div>
+</div>
+
+
+<pre><span id="VALconstructor"><span class="keyword">val</span> constructor</span> : <code class="type">row:int -><br>       col:int -><br>       health:int -><br>       description:string -><br>       name:string -><br>       id:int -> strength:int -> gainables:<a href="Player.Player.html#TYPEskill">Player.Player.skill</a> list -> <a href="Foods.F.html#TYPEfood">food</a></code></pre><div class="info ">
+<div class="info-desc">
+<p>Constructor of a food</p>
+</div>
+</div>
+
+<pre><span id="VALget_name"><span class="keyword">val</span> get_name</span> : <code class="type"><a href="Foods.F.html#TYPEfood">food</a> -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_name f</code> is the name of the food <code class="code">f</code></p>
+</div>
+</div>
+
+<pre><span id="VALget_description"><span class="keyword">val</span> get_description</span> : <code class="type"><a href="Foods.F.html#TYPEfood">food</a> -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_description f</code> is the description of the food <code class="code">f</code></p>
+</div>
+</div>
+
+<pre><span id="VALget_strength"><span class="keyword">val</span> get_strength</span> : <code class="type"><a href="Foods.F.html#TYPEfood">food</a> -> int</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_strength f</code> is the strength of the food <code class="code">f</code></p>
+</div>
+</div>
+
+<pre><span id="VALget_health"><span class="keyword">val</span> get_health</span> : <code class="type"><a href="Foods.F.html#TYPEfood">food</a> -> int</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_health f</code> is the health of the food <code class="code">f</code></p>
+</div>
+</div>
+
+<pre><span id="VALget_loc"><span class="keyword">val</span> get_loc</span> : <code class="type"><a href="Foods.F.html#TYPEfood">food</a> -> int * int</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_loc f</code> is the location of the food <code class="code">f</code></p>
+</div>
+</div>
+
+<pre><span id="VALset_loc"><span class="keyword">val</span> set_loc</span> : <code class="type"><a href="Foods.F.html#TYPEfood">food</a> -> int * int -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">set_loc f loc</code> sets the location of the food <code class="code">f</code> to <code class="code">loc</code></p>
+</div>
+</div>
+
+<pre><span id="VALget_gainables"><span class="keyword">val</span> get_gainables</span> : <code class="type"><a href="Foods.F.html#TYPEfood">food</a> -> <a href="Player.Player.html#TYPEskill">Player.Player.skill</a> list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_gainables f</code> is the skill gainables of food <code class="code">f</code></p>
+</div>
+</div>
+</body></html>

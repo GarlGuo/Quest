@@ -1,0 +1,132 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link rel="Up" href="Weapons.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Index of module types" rel=Appendix href="index_module_types.html">
+<link title="Engine" rel="Chapter" href="Engine.html">
+<link title="Player" rel="Chapter" href="Player.html">
+<link title="Foods" rel="Chapter" href="Foods.html">
+<link title="Weapons" rel="Chapter" href="Weapons.html">
+<link title="Maps" rel="Chapter" href="Maps.html">
+<link title="Enemy" rel="Chapter" href="Enemy.html">
+<link title="Color_convert" rel="Chapter" href="Color_convert.html">
+<link title="Map_builder" rel="Chapter" href="Map_builder.html">
+<link title="Gui" rel="Chapter" href="Gui.html">
+<link title="Builder" rel="Chapter" href="Builder.html">
+<link title="Main" rel="Chapter" href="Main.html"><title>Weapons.Weapon</title>
+</head>
+<body>
+<div class="navbar">&nbsp;<a class="up" href="Weapons.html" title="Weapons">Up</a>
+&nbsp;</div>
+<h1>Module <a href="type_Weapons.Weapon.html">Weapons.Weapon</a></h1>
+
+<pre><span id="MODULEWeapon"><span class="keyword">module</span> Weapon</span>: <code class="code">sig</code> <a href="Weapons.Weapon.html">..</a> <code class="code">end</code></pre><div class="info module top">
+<div class="info-desc">
+<p><code class="code">Weapon</code> is the abstract data type for weapons</p>
+</div>
+</div>
+<hr width="100%">
+<p>Documentation in W</p>
+
+<pre><code><span id="TYPEweapon"><span class="keyword">type</span> <code class="type"></code>weapon</span> = {</code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTweapon.name">name</span>&nbsp;: <code class="type">string</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTweapon.description">description</span>&nbsp;: <code class="type">string</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTweapon.id">id</span>&nbsp;: <code class="type">int</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTweapon.strength">strength</span>&nbsp;: <code class="type">int</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTweapon.gainables">gainables</span>&nbsp;: <code class="type"><a href="Player.Player.html#TYPEskill">Player.Player.skill</a> list</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span class="keyword">mutable&nbsp;</span><span id="TYPEELTweapon.weapon_loc">weapon_loc</span>&nbsp;: <code class="type">int * int</code>;</code></td>
+
+</tr></table>
+}
+
+<div class="info ">
+<div class="info-desc">
+<p>The abstract type of values representing weapons.</p>
+</div>
+</div>
+
+
+<pre><span id="VALconstructor"><span class="keyword">val</span> constructor</span> : <code class="type">row:int -><br>       col:int -><br>       name:string -><br>       id:int -><br>       description:string -><br>       strength:int -> gainables:<a href="Player.Player.html#TYPEskill">Player.Player.skill</a> list -> <a href="Weapons.Weapon.html#TYPEweapon">weapon</a></code></pre><div class="info ">
+<div class="info-desc">
+<p>Constructor of a weapon</p>
+</div>
+</div>
+
+<pre><span id="VALget_name"><span class="keyword">val</span> get_name</span> : <code class="type"><a href="Weapons.Weapon.html#TYPEweapon">weapon</a> -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_name w</code> is the name of the weapon <code class="code">w</code></p>
+</div>
+</div>
+
+<pre><span id="VALget_description"><span class="keyword">val</span> get_description</span> : <code class="type"><a href="Weapons.Weapon.html#TYPEweapon">weapon</a> -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_description w</code> is the description of the weapon <code class="code">w</code></p>
+</div>
+</div>
+
+<pre><span id="VALget_strength"><span class="keyword">val</span> get_strength</span> : <code class="type"><a href="Weapons.Weapon.html#TYPEweapon">weapon</a> -> int</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_strength w</code> is the strength of the weapon <code class="code">w</code></p>
+</div>
+</div>
+
+<pre><span id="VALget_loc"><span class="keyword">val</span> get_loc</span> : <code class="type"><a href="Weapons.Weapon.html#TYPEweapon">weapon</a> -> int * int</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_loc w</code> is the location of the weapon <code class="code">w</code></p>
+</div>
+</div>
+
+<pre><span id="VALset_loc"><span class="keyword">val</span> set_loc</span> : <code class="type"><a href="Weapons.Weapon.html#TYPEweapon">weapon</a> -> int * int -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">set_loc w loc</code> sets the location of the weapon <code class="code">w</code> to <code class="code">loc</code></p>
+</div>
+</div>
+
+<pre><span id="VALget_gainables"><span class="keyword">val</span> get_gainables</span> : <code class="type"><a href="Weapons.Weapon.html#TYPEweapon">weapon</a> -> <a href="Player.Player.html#TYPEskill">Player.Player.skill</a> list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_gainables w</code> is the skill gainables of weapon <code class="code">w</code></p>
+</div>
+</div>
+</body></html>

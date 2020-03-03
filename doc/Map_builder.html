@@ -1,0 +1,171 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link rel="previous" href="Color_convert.html">
+<link rel="next" href="Gui.html">
+<link rel="Up" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Index of module types" rel=Appendix href="index_module_types.html">
+<link title="Engine" rel="Chapter" href="Engine.html">
+<link title="Player" rel="Chapter" href="Player.html">
+<link title="Foods" rel="Chapter" href="Foods.html">
+<link title="Weapons" rel="Chapter" href="Weapons.html">
+<link title="Maps" rel="Chapter" href="Maps.html">
+<link title="Enemy" rel="Chapter" href="Enemy.html">
+<link title="Color_convert" rel="Chapter" href="Color_convert.html">
+<link title="Map_builder" rel="Chapter" href="Map_builder.html">
+<link title="Gui" rel="Chapter" href="Gui.html">
+<link title="Builder" rel="Chapter" href="Builder.html">
+<link title="Main" rel="Chapter" href="Main.html"><title>Map_builder</title>
+</head>
+<body>
+<div class="navbar"><a class="pre" href="Color_convert.html" title="Color_convert">Previous</a>
+&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;<a class="post" href="Gui.html" title="Gui">Next</a>
+</div>
+<h1>Module <a href="type_Map_builder.html">Map_builder</a></h1>
+
+<pre><span id="MODULEMap_builder"><span class="keyword">module</span> Map_builder</span>: <code class="code">sig</code> <a href="Map_builder.html">..</a> <code class="code">end</code></pre><hr width="100%">
+
+<pre><span id="VALpurple_red"><span class="keyword">val</span> purple_red</span> : <code class="type">Graphics.color</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">purple_red</code> is color purple</p>
+</div>
+</div>
+
+<pre><span id="VALfield"><span class="keyword">val</span> field</span> : <code class="type">Graphics.image option Stdlib.ref</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">field</code> is the field for map with image "field", it is going to be 
+    filled with Graphics.image</p>
+</div>
+</div>
+
+<pre><span id="VALbeach"><span class="keyword">val</span> beach</span> : <code class="type">Graphics.image option Stdlib.ref</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">beach</code> is the field for map with image "sand", it is going to be 
+    filled with Graphics.image</p>
+</div>
+</div>
+
+<pre><span id="VALmountain"><span class="keyword">val</span> mountain</span> : <code class="type">Graphics.image option Stdlib.ref</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">mountain</code> is the field for map with image "mountain", it is going to be 
+    filled with Graphics.image</p>
+</div>
+</div>
+
+<pre><span id="VALlake"><span class="keyword">val</span> lake</span> : <code class="type">Graphics.image option Stdlib.ref</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">lake</code> is the field for map with image "lake", it is going to be 
+    filled with Graphics.image</p>
+</div>
+</div>
+
+<pre><span id="VALsnow"><span class="keyword">val</span> snow</span> : <code class="type">Graphics.image option Stdlib.ref</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">snow</code> is the field for map with image "snow", it is going to be 
+    filled with Graphics.image</p>
+</div>
+</div>
+
+<pre><span id="VALgrass"><span class="keyword">val</span> grass</span> : <code class="type">Graphics.image option Stdlib.ref</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">grass</code> is the field for map with image "grass", it is going to be 
+    filled with Graphics.image</p>
+</div>
+</div>
+
+<pre><span id="VALportal"><span class="keyword">val</span> portal</span> : <code class="type">Graphics.image option Stdlib.ref</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">portal</code> is the field for portal, it is going to be 
+    filled with Graphics.image</p>
+</div>
+</div>
+
+<pre><span id="VALtext_init"><span class="keyword">val</span> text_init</span> : <code class="type">unit -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">text_init()</code> loads the graphics data for map
+    Require: graph must be opened</p>
+</div>
+</div>
+
+<pre><span id="VALmap_size_cal"><span class="keyword">val</span> map_size_cal</span> : <code class="type"><a href="Maps.html#TYPEt">Maps.t</a> -> (int * int) * int</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">map_size_cal t</code> scales the size of the map model object <code class="code">t</code> 
+   to the size of the GUI screen and returns the dimensions of the 
+   scaled map w.r.t the GUI.</p>
+</div>
+</div>
+
+<pre><span id="VALpicture_getter"><span class="keyword">val</span> picture_getter</span> : <code class="type">string -> 'a -> Graphics.image</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">picture_getter s</code> returns the image RGB matrix given by the 
+   picture name <code class="code">s</code>. 
+   Fails with <code class="code">"wrong name of picture, broken json or code"</code> if <code class="code">s</code> is not 
+   a valid picture name.</p>
+</div>
+</div>
+
+<pre><span id="VALmap_text_build"><span class="keyword">val</span> map_text_build</span> : <code class="type">unit -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">map_text_build ()</code> draws the map on the GUI based on the map params 
+   and returns <code class="code">()</code></p>
+</div>
+</div>
+
+<pre><span id="VALdraw_player"><span class="keyword">val</span> draw_player</span> : <code class="type">unit -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">draw_player ()</code> draws the player on the GUI and returns <code class="code">()</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALdraw_weapon"><span class="keyword">val</span> draw_weapon</span> : <code class="type">int -> int -> int -> <a href="Builder.html#TYPEweapon_item">Builder.weapon_item</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">draw_weapon rr cr interval w</code> draws everything in <code class="code">w</code> with
+    <code class="code">rr,cr</code> as the lower-left point and each points have a interval of 
+    <code class="code">interval</code>
+    Requires: <code class="code">rr</code>,<code class="code">cr</code>,<code class="code">interval</code> are positive int or 0
+    <code class="code">w</code> is a vaild weapon list</p>
+</div>
+</div>
+
+<pre><span id="VALdraw_food"><span class="keyword">val</span> draw_food</span> : <code class="type">int -> int -> int -> <a href="Builder.html#TYPEfood_item">Builder.food_item</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">draw_food rr cr interval f</code> draws everything in <code class="code">f</code> with
+    <code class="code">rr,cr</code> as the lower-left point and each points have a interval of 
+    <code class="code">interval</code>
+    Requires: <code class="code">rr</code>,<code class="code">cr</code>,<code class="code">interval</code> are positive int or 0
+    <code class="code">f</code> is a vaild food list</p>
+</div>
+</div>
+
+<pre><span id="VALdraw_enemy"><span class="keyword">val</span> draw_enemy</span> : <code class="type">int -> int -> int -> <a href="Builder.html#TYPEenemy">Builder.enemy</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">draw_food rr cr interval e</code> draws everything in <code class="code">e</code> with
+    <code class="code">rr,cr</code> as the lower-left point and each points have a interval of 
+    <code class="code">interval</code>
+    Requires: <code class="code">rr</code>,<code class="code">cr</code>,<code class="code">interval</code> are positive int or 0
+    <code class="code">e</code> is a vaild enemy list</p>
+</div>
+</div>
+
+<pre><span id="VALdraw_items"><span class="keyword">val</span> draw_items</span> : <code class="type">unit -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">draw_items()</code> draws every items, including foods, weapons, enemies,
+    and portals, on the map</p>
+</div>
+</div>
+
+<pre><span id="VALdraw"><span class="keyword">val</span> draw</span> : <code class="type">unit -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">draw()</code> draws items, player and maps</p>
+</div>
+</div>
+</body></html>

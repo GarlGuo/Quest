@@ -1,0 +1,316 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link rel="next" href="Player.html">
+<link rel="Up" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Index of module types" rel=Appendix href="index_module_types.html">
+<link title="Engine" rel="Chapter" href="Engine.html">
+<link title="Player" rel="Chapter" href="Player.html">
+<link title="Foods" rel="Chapter" href="Foods.html">
+<link title="Weapons" rel="Chapter" href="Weapons.html">
+<link title="Maps" rel="Chapter" href="Maps.html">
+<link title="Enemy" rel="Chapter" href="Enemy.html">
+<link title="Color_convert" rel="Chapter" href="Color_convert.html">
+<link title="Map_builder" rel="Chapter" href="Map_builder.html">
+<link title="Gui" rel="Chapter" href="Gui.html">
+<link title="Builder" rel="Chapter" href="Builder.html">
+<link title="Main" rel="Chapter" href="Main.html"><title>Engine</title>
+</head>
+<body>
+<div class="navbar">&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;<a class="post" href="Player.html" title="Player">Next</a>
+</div>
+<h1>Module <a href="type_Engine.html">Engine</a></h1>
+
+<pre><span id="MODULEEngine"><span class="keyword">module</span> Engine</span>: <code class="code">sig</code> <a href="Engine.html">..</a> <code class="code">end</code></pre><hr width="100%">
+
+<pre><span id="VALchoose_skill_random"><span class="keyword">val</span> choose_skill_random</span> : <code class="type"><a href="Enemy.Enemy.html#TYPEt">Enemy.Enemy.t</a> -> string * int</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">choose_skill_random t</code> is a (skill name, skill strength) for enemy <code class="code">t</code>, 
+   chosen randomly from all of enemy <code class="code">t</code>'s skills</p>
+</div>
+</div>
+
+<pre><span id="VALfilter_one_element_out_from_array"><span class="keyword">val</span> filter_one_element_out_from_array</span> : <code class="type">'a array -> int -> 'a array</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">filter_one_element_out_from_array arr pos</code> returns the array <code class="code">arr</code> 
+   without the element at index <code class="code">pos</code>. 
+   Requires: <code class="code">0 &lt;= pos &lt; Array.length arr</code></p>
+</div>
+</div>
+
+<pre><span id="VALget_map_index_by_name"><span class="keyword">val</span> get_map_index_by_name</span> : <code class="type"><a href="Builder.html#TYPEstate">Builder.state</a> -> string -> int</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_map_index_by_name s name</code> returns the index of the map in game state
+   <code class="code">s</code> with the corresponding name <code class="code">name</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALhelper_init"><span class="keyword">val</span> helper_init</span> : <code class="type">unit -><br>       <a href="Builder.html#TYPEcurrent_map">Builder.current_map</a> array * <a href="Builder.html#TYPEenemy">Builder.enemy</a> array array *<br>       <a href="Builder.html#TYPEfood_item">Builder.food_item</a> array array * <a href="Builder.html#TYPEweapon_item">Builder.weapon_item</a> array array</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">helper_init ()</code> is a helper function for <code class="code">init ()</code> that gets the 
+   necessary information for the initial state.</p>
+</div>
+</div>
+
+<pre><span id="VALinit"><span class="keyword">val</span> init</span> : <code class="type">unit -> <a href="Builder.html#TYPEstate">Builder.state</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">init ()</code> is the init state of the entire game. 
+      Invariant: the first map of all maps must be main map !!!</p>
+</div>
+</div>
+
+<pre><span id="VALgame_state"><span class="keyword">val</span> game_state</span> : <code class="type"><a href="Builder.html#TYPEstate">Builder.state</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">game_state</code> is the initial game state</p>
+</div>
+</div>
+
+<pre><span id="VALmove_player_left"><span class="keyword">val</span> move_player_left</span> : <code class="type"><a href="Builder.html#TYPEstate">Builder.state</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">move_player_left s</code> change the current pos (col', row') of player 
+    in state <code class="code">s</code> to (col'-1, row') within the map boundaries.</p>
+</div>
+</div>
+
+<pre><span id="VALmove_player_right"><span class="keyword">val</span> move_player_right</span> : <code class="type"><a href="Builder.html#TYPEstate">Builder.state</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">move_player_right s</code> change the current pos (col', row') of player 
+    in state <code class="code">s</code> to (col'+1, row') within the map boundaries.</p>
+</div>
+</div>
+
+<pre><span id="VALmove_player_up"><span class="keyword">val</span> move_player_up</span> : <code class="type"><a href="Builder.html#TYPEstate">Builder.state</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">move_player_up s</code> change the current pos (col', row') of player 
+    in state <code class="code">s</code> to (col', row'+1) within the map boundaries.</p>
+</div>
+</div>
+
+<pre><span id="VALmove_player_down"><span class="keyword">val</span> move_player_down</span> : <code class="type"><a href="Builder.html#TYPEstate">Builder.state</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">move_player_down s</code> change the current pos (col', row') of player 
+    in state <code class="code">s</code> to (col', row'-1) within the map boundaries.</p>
+</div>
+</div>
+
+<pre><span id="VALchange_player"><span class="keyword">val</span> change_player</span> : <code class="type"><a href="Builder.html#TYPEplayer">Builder.player</a> -> <a href="Builder.html#TYPEstate">Builder.state</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">change_player p s</code> changes the player in game state <code class="code">s</code> to <code class="code">p</code></p>
+</div>
+</div>
+
+<pre><span id="VALcheck_enemy"><span class="keyword">val</span> check_enemy</span> : <code class="type"><a href="Builder.html#TYPEstate">Builder.state</a> -> string Stdlib.ref -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">check_enemy s store</code> checks whether there is an enemy at the player
+   location at states <code class="code">s</code>, and if so, appends the enemy in <code class="code">store</code> and 
+   raises <code class="code">SuccessExit</code>. Otherwise, no change is made.</p>
+</div>
+</div>
+
+<pre><span id="VALcheck_enemy_in_current_loc"><span class="keyword">val</span> check_enemy_in_current_loc</span> : <code class="type"><a href="Builder.html#TYPEstate">Builder.state</a> -> bool * string</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">check_enemy_in_current_loc s</code> is <code class="code">(true, str)</code> if there exists an 
+   enemy at the current location of the player at state <code class="code">s</code>, and 
+   <code class="code">(false, "")</code> otherwise.</p>
+</div>
+</div>
+
+<pre><span id="VALfind_one_map_by_name"><span class="keyword">val</span> find_one_map_by_name</span> : <code class="type"><a href="Builder.html#TYPEstate">Builder.state</a> -> string -> <a href="Builder.html#TYPEcurrent_map">Builder.current_map</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">find_one_map_by_name s name</code> is the map with its name as <code class="code">name</code> from
+   all maps in <code class="code">s</code>
+   Requires: map with name <code class="code">map_name</code> must be inside <code class="code">lst</code></p>
+</div>
+</div>
+
+<pre><span id="VALreduce_player_health"><span class="keyword">val</span> reduce_player_health</span> : <code class="type"><a href="Builder.html#TYPEstate">Builder.state</a> -> int -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">reduce_player_health s hp</code> reduces the health of player at state <code class="code">s</code> by 
+   <code class="code">hp</code>. If calling this function makes the player's health 0 or negative,
+   then the player dies.</p>
+</div>
+</div>
+
+<pre><span id="VALstrengthen_whole_map"><span class="keyword">val</span> strengthen_whole_map</span> : <code class="type"><a href="Builder.html#TYPEstate">Builder.state</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">strengthen_whole_map s</code> will strengthen every living enemy in all maps in
+   state <code class="code">s</code></p>
+</div>
+</div>
+
+<pre><span id="VALdelete_one_enemy_from_state"><span class="keyword">val</span> delete_one_enemy_from_state</span> : <code class="type"><a href="Builder.html#TYPEstate">Builder.state</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">delete_one_enemy_from_state s</code> deletes the enemy with player's current
+   location at state <code class="code">s</code></p>
+</div>
+</div>
+
+<pre><span id="VALtake_one_food"><span class="keyword">val</span> take_one_food</span> : <code class="type"><a href="Builder.html#TYPEstate">Builder.state</a> -> int Stdlib.ref -> <a href="Builder.html#TYPEfood_item">Builder.food_item</a> Stdlib.ref -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">take_one_food s</code> takes food from the player's current location at state
+   <code class="code">s</code>, if any, and adds it to the first empty slot in the player's food 
+   inventory. 
+   Raises: <code class="code">SuccessExit</code> if the food from the player's location was 
+   successfully eaten.</p>
+</div>
+</div>
+
+<pre><span id="VALtake_one_food_in_current_location"><span class="keyword">val</span> take_one_food_in_current_location</span> : <code class="type"><a href="Builder.html#TYPEstate">Builder.state</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">take_one_food_in_current_location s</code> takes food on player's current 
+   location at state <code class="code">s</code>,  if any, to the first empty slot in player's food 
+   inventory.</p>
+</div>
+</div>
+
+<pre><span id="VALdrop_one_food"><span class="keyword">val</span> drop_one_food</span> : <code class="type"><a href="Builder.html#TYPEstate">Builder.state</a> -> int -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">drop_one_food s pos</code> drops the food at index <code class="code">pos</code> of the player's 
+   food inventory to the player's current location at state <code class="code">s</code>. 
+   Raises: <code class="code">SuccessExit</code> if the food at index <code class="code">pos</code> is successfully dropped.</p>
+</div>
+</div>
+
+<pre><span id="VALdrop_one_food_to_current_location"><span class="keyword">val</span> drop_one_food_to_current_location</span> : <code class="type"><a href="Builder.html#TYPEstate">Builder.state</a> -> int -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">drop_one_food_to_current_location s pos</code> drops the food at index <code class="code">pos</code> 
+   of the player's food inventory to the player's current location at state 
+   <code class="code">s</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALeat_one_food_in_inventory"><span class="keyword">val</span> eat_one_food_in_inventory</span> : <code class="type"><a href="Builder.html#TYPEstate">Builder.state</a> -> int -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">eat_one_food_in_inventory s pos</code> eats the food from the player's current
+   location, if any, with the player increasing health and strength and the 
+   food at index <code class="code">pos</code> removed from the player's inventory at state <code class="code">s</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALequip_one_weapon"><span class="keyword">val</span> equip_one_weapon</span> : <code class="type"><a href="Builder.html#TYPEstate">Builder.state</a> -> int Stdlib.ref -> <a href="Builder.html#TYPEweapon_item">Builder.weapon_item</a> Stdlib.ref -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">equip_one_weapon s</code> will check player's inventory and equip player with
+   weapon of player's current location if possible. If the weapon inventory is
+   already full, the weapon will not be equipped (the game state wouldn't 
+   change).
+   Raises: <code class="code">SuccessExit</code> if the weapon is successfully equipped in the 
+   player's inventory.</p>
+</div>
+</div>
+
+<pre><span id="VALequip_weapon_in_current_loc"><span class="keyword">val</span> equip_weapon_in_current_loc</span> : <code class="type"><a href="Builder.html#TYPEstate">Builder.state</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">equip_weapon_in_current_loc s</code> will update the weapon inventory of 
+   game state <code class="code">s</code> if there is any empty slot and weapon in player's current 
+   location will be equipped in that slot.</p>
+</div>
+</div>
+
+<pre><span id="VALdrop_one_weapon"><span class="keyword">val</span> drop_one_weapon</span> : <code class="type"><a href="Builder.html#TYPEstate">Builder.state</a> -> int -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">drop_one_weapon s pos</code> drops the weapon at index <code class="code">pos</code> of the player's 
+   weapon inventory to the player's current location at state <code class="code">s</code>. 
+   Example: if the weapon inventory is <code class="code">|Null; Null; dagger|</code>
+   <code class="code">drop_one_weapon s 2</code> drops <code class="code">dagger</code>, and the weapon inventory 
+   becomes <code class="code">|Null; Null; Empty|</code>.
+   Raises: <code class="code">SuccessExit</code> if the weapon at index <code class="code">pos</code> is successfully removed
+   from the weapon inventory.</p>
+</div>
+</div>
+
+<pre><span id="VALdrop_one_weapon_to_current_location"><span class="keyword">val</span> drop_one_weapon_to_current_location</span> : <code class="type"><a href="Builder.html#TYPEstate">Builder.state</a> -> int -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">drop_one_weapon_to_current_location s pos</code> drops the weapon at index 
+   <code class="code">pos</code> of the player's weapon inventory to the player's current location 
+   at state <code class="code">s</code>. 
+   Example: if the weapon inventory is <code class="code">|Null; Null; dagger|</code>
+   <code class="code">drop_one_weapon_to_current_location s 2</code> drops <code class="code">dagger</code>, and the 
+   weapon inventory becomes <code class="code">|Null; Null; Empty|</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALcheck_food_on_loc_and_return_name_list"><span class="keyword">val</span> check_food_on_loc_and_return_name_list</span> : <code class="type"><a href="Builder.html#TYPEstate">Builder.state</a> -> int * int -> string list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">check_food_on_loc_and_return_name_list s loc</code> returns a list of food names
+   (possibly empty) are at the location <code class="code">loc</code> 
+   in the current map in state <code class="code">s</code></p>
+</div>
+</div>
+
+<pre><span id="VALcheck_weapon_on_loc_and_return_name_list"><span class="keyword">val</span> check_weapon_on_loc_and_return_name_list</span> : <code class="type"><a href="Builder.html#TYPEstate">Builder.state</a> -> int * int -> string list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">check_weapon_on_loc_and_return_name_list s loc</code> returns a list of 
+   weapon names (possibly empty) that are at the location <code class="code">loc</code> 
+   in the current map in state <code class="code">s</code></p>
+</div>
+</div>
+
+<pre><span id="VALcheck_item_on_player_ground"><span class="keyword">val</span> check_item_on_player_ground</span> : <code class="type"><a href="Builder.html#TYPEstate">Builder.state</a> -> string list * string list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">check_item_on_player_ground s</code> is a tuple of 
+   (food_name list,  weapon_name list) at player's current position
+   at state <code class="code">s</code> 
+   Requires: Player MUST BE Alive</p>
+</div>
+</div>
+
+<pre><span id="VALdelete_map_pos"><span class="keyword">val</span> delete_map_pos</span> : <code class="type"><a href="Builder.html#TYPEstate">Builder.state</a> -> int -> string -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">delete_map_pos s pos name</code> deletes the items of the item arrays 
+   at index <code class="code">pos</code> in state <code class="code">s</code> with map name as <code class="code">name</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALcheck_current_linked_map"><span class="keyword">val</span> check_current_linked_map</span> : <code class="type"><a href="Builder.html#TYPEstate">Builder.state</a> -> bool * string</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">check_current_linked_map s</code> returns <code class="code">(false, "")</code> if the current map in 
+   state <code class="code">s</code> is not <code class="code">"main"</code> or if the player at state <code class="code">s</code> is not found in the 
+   branced map info. Otherwise, <code class="code">(true, info)</code> is returned where <code class="code">info</code> is 
+   the information in the branched map</p>
+</div>
+</div>
+
+<pre><span id="VALtransfer_player_to_branch_map"><span class="keyword">val</span> transfer_player_to_branch_map</span> : <code class="type"><a href="Builder.html#TYPEstate">Builder.state</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">transfer_player_to_branch_map s</code> transfers the player at state <code class="code">s</code> to the
+   branch map.</p>
+</div>
+</div>
+
+<pre><span id="VALcheck_branch_map_status"><span class="keyword">val</span> check_branch_map_status</span> : <code class="type"><a href="Builder.html#TYPEstate">Builder.state</a> -> bool</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">check_branch_map_status s</code> returns whether the player at state <code class="code">s</code> has 
+   finished his current branched map.</p>
+</div>
+</div>
+
+<pre><span id="VALtransfer_player_to_main_map"><span class="keyword">val</span> transfer_player_to_main_map</span> : <code class="type"><a href="Builder.html#TYPEstate">Builder.state</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">transfer_player_to_main_map s</code> transfers the player at state <code class="code">s</code> to the 
+   main map and changes to the corresponding configurations in the map.</p>
+</div>
+</div>
+
+<pre><span id="VALlist_of_entrance_loc_to_branch_map"><span class="keyword">val</span> list_of_entrance_loc_to_branch_map</span> : <code class="type"><a href="Builder.html#TYPEstate">Builder.state</a> -> (int * int) list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">list_of_entrance_loc_to_branch_map s</code> is the list of entrance locations
+   to the branch map named <code class="code">s</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALcheck_wins"><span class="keyword">val</span> check_wins</span> : <code class="type"><a href="Builder.html#TYPEstate">Builder.state</a> -> bool</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">check_wins s</code> returns whether the player at state <code class="code">s</code> is in the 
+   winning state.</p>
+</div>
+</div>
+</body></html>

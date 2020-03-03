@@ -1,0 +1,62 @@
+<html><head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Index of module types" rel=Appendix href="index_module_types.html">
+<link title="Engine" rel="Chapter" href="Engine.html">
+<link title="Player" rel="Chapter" href="Player.html">
+<link title="Foods" rel="Chapter" href="Foods.html">
+<link title="Weapons" rel="Chapter" href="Weapons.html">
+<link title="Maps" rel="Chapter" href="Maps.html">
+<link title="Enemy" rel="Chapter" href="Enemy.html">
+<link title="Color_convert" rel="Chapter" href="Color_convert.html">
+<link title="Map_builder" rel="Chapter" href="Map_builder.html">
+<link title="Gui" rel="Chapter" href="Gui.html">
+<link title="Builder" rel="Chapter" href="Builder.html">
+<link title="Main" rel="Chapter" href="Main.html"><title>Player.P</title>
+</head>
+<body>
+<code class="code"><span class="keyword">sig</span><br>
+&nbsp;&nbsp;<span class="keyword">type</span>&nbsp;skill<br>
+&nbsp;&nbsp;<span class="keyword">type</span>&nbsp;t<br>
+&nbsp;&nbsp;<span class="keyword">exception</span>&nbsp;<span class="constructor">Unknownskill</span>&nbsp;<span class="keyword">of</span>&nbsp;string<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;constructor&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;?strength:int&nbsp;<span class="keywordsign">-&gt;</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;?health:int&nbsp;<span class="keywordsign">-&gt;</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;?level:int&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;?experience:int&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;?loc:int&nbsp;*&nbsp;int&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;unit&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="constructor">Player</span>.<span class="constructor">P</span>.t<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;level&nbsp;:&nbsp;<span class="constructor">Player</span>.<span class="constructor">P</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;int<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;location&nbsp;:&nbsp;<span class="constructor">Player</span>.<span class="constructor">P</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;int&nbsp;*&nbsp;int<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;row&nbsp;:&nbsp;<span class="constructor">Player</span>.<span class="constructor">P</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;int<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;col&nbsp;:&nbsp;<span class="constructor">Player</span>.<span class="constructor">P</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;int<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;health&nbsp;:&nbsp;<span class="constructor">Player</span>.<span class="constructor">P</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;int<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;max_health&nbsp;:&nbsp;<span class="constructor">Player</span>.<span class="constructor">P</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;int<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;experience&nbsp;:&nbsp;<span class="constructor">Player</span>.<span class="constructor">P</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;int<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;move_up&nbsp;:&nbsp;<span class="constructor">Player</span>.<span class="constructor">P</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="constructor">Maps</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;unit<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;move_down&nbsp;:&nbsp;<span class="constructor">Player</span>.<span class="constructor">P</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="constructor">Maps</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;unit<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;move_right&nbsp;:&nbsp;<span class="constructor">Player</span>.<span class="constructor">P</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="constructor">Maps</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;unit<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;move_left&nbsp;:&nbsp;<span class="constructor">Player</span>.<span class="constructor">P</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="constructor">Maps</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;unit<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;reduce_health&nbsp;:&nbsp;<span class="constructor">Player</span>.<span class="constructor">P</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;int&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;unit<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;reduce_strength&nbsp;:&nbsp;<span class="constructor">Player</span>.<span class="constructor">P</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;int&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;unit<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;increase_experience&nbsp;:&nbsp;<span class="constructor">Player</span>.<span class="constructor">P</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;int&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;unit<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;increase_health&nbsp;:&nbsp;<span class="constructor">Player</span>.<span class="constructor">P</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;int&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;unit<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;increase_strength&nbsp;:&nbsp;<span class="constructor">Player</span>.<span class="constructor">P</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;int&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;unit<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;switch_loc&nbsp;:&nbsp;<span class="constructor">Player</span>.<span class="constructor">P</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;int&nbsp;*&nbsp;int&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;unit<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;update_skill&nbsp;:&nbsp;<span class="constructor">Player</span>.<span class="constructor">P</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="constructor">Player</span>.<span class="constructor">P</span>.skill&nbsp;list&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;unit<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;level_up_expereince&nbsp;:&nbsp;<span class="constructor">Player</span>.<span class="constructor">P</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;int<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;advance_level&nbsp;:&nbsp;<span class="constructor">Player</span>.<span class="constructor">P</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;unit<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;skill_constructor&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;name:string&nbsp;<span class="keywordsign">-&gt;</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;description:string&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;strength:int&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;cd:int&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="constructor">Player</span>.<span class="constructor">P</span>.skill<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;get_skill_by_skill_name&nbsp;:&nbsp;<span class="constructor">Player</span>.<span class="constructor">P</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;string&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="constructor">Player</span>.<span class="constructor">P</span>.skill<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;available_skills_list&nbsp;:&nbsp;<span class="constructor">Player</span>.<span class="constructor">P</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="constructor">Player</span>.<span class="constructor">P</span>.skill&nbsp;list<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;skill_name&nbsp;:&nbsp;<span class="constructor">Player</span>.<span class="constructor">P</span>.skill&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;string<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;skill_strength&nbsp;:&nbsp;<span class="constructor">Player</span>.<span class="constructor">P</span>.skill&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;int<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;skill_description&nbsp;:&nbsp;<span class="constructor">Player</span>.<span class="constructor">P</span>.skill&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;string<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;choose_skill&nbsp;:&nbsp;<span class="constructor">Player</span>.<span class="constructor">P</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="constructor">Player</span>.<span class="constructor">P</span>.skill&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;unit<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;get_all_skill_format&nbsp;:&nbsp;<span class="constructor">Player</span>.<span class="constructor">P</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;(string&nbsp;*&nbsp;int)&nbsp;list<br>
+<span class="keyword">end</span></code></body></html>

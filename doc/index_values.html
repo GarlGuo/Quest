@@ -1,0 +1,2409 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Index of module types" rel=Appendix href="index_module_types.html">
+<link title="Engine" rel="Chapter" href="Engine.html">
+<link title="Player" rel="Chapter" href="Player.html">
+<link title="Foods" rel="Chapter" href="Foods.html">
+<link title="Weapons" rel="Chapter" href="Weapons.html">
+<link title="Maps" rel="Chapter" href="Maps.html">
+<link title="Enemy" rel="Chapter" href="Enemy.html">
+<link title="Color_convert" rel="Chapter" href="Color_convert.html">
+<link title="Map_builder" rel="Chapter" href="Map_builder.html">
+<link title="Gui" rel="Chapter" href="Gui.html">
+<link title="Builder" rel="Chapter" href="Builder.html">
+<link title="Main" rel="Chapter" href="Main.html"><title>Index of values</title>
+</head>
+<body>
+<div class="navbar">&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;</div>
+<h1>Index of values</h1>
+<table>
+<tr><td align="left"><div>A</div></td></tr>
+<tr><td><a href="Gui.html#VALaction_button_helper">action_button_helper</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">action_button_helper status stage (x,y,w,h) (c,t)</code> checks is the mouse
+    pressed according to <code class="code">status</code> in the range <code class="code">x,y,x+w,h+y+h</code> and perform
+    the action according to <code class="code">c,t</code>
+    Require: <code class="code">status</code> is Graphics.dtatus
+    <code class="code">stage</code> is a vaild stage
+    <code class="code">x,y,w,h</code> are non-nagative ints
+    <code class="code">c,t</code> are strings</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.P.html#VALadvance_level">advance_level</a> [<a href="Player.P.html">Player.P</a>]</td>
+<td><div class="info">
+<p><code class="code">advance_level p</code> advances player <code class="code">p</code> to the next level and updates
+     player <code class="code">p</code>'s experience as well.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.Player.html#VALadvance_level">advance_level</a> [<a href="Player.Player.html">Player.Player</a>]</td>
+<td><div class="info">
+<p><code class="code">advance_level p</code> advances player <code class="code">p</code> to the next level and updates
+       player <code class="code">p</code>'s experience as well.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Color_convert.html#VALarray_color">array_color</a> [<a href="Color_convert.html">Color_convert</a>]</td>
+<td><div class="info">
+<p><code class="code">array_color l</code> converts the image json data <code class="code">l</code> into an rgb matrix <code class="code">m</code>, 
+   and returns <code class="code">m</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.Player.html#VALassert_skill_name_NOT_in_list">assert_skill_name_NOT_in_list</a> [<a href="Player.Player.html">Player.Player</a>]</td>
+<td><div class="info">
+<p><code class="code">assert_skill_name_NOT_in_list p n</code> returns <code class="code">true</code> if there are no 
+     skills in the skill list of player <code class="code">p</code> with name <code class="code">n</code>, and <code class="code">false</code>
+     otherwise.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.P.html#VALavailable_skills_list">available_skills_list</a> [<a href="Player.P.html">Player.P</a>]</td>
+<td><div class="info">
+<p><code class="code">available_skills_list p</code> is the skills that the player <code class="code">p</code> posesses.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.Player.html#VALavailable_skills_list">available_skills_list</a> [<a href="Player.Player.html">Player.Player</a>]</td>
+<td><div class="info">
+<p><code class="code">available_skills_list p</code> is the skills that the player <code class="code">p</code> posesses.</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>B</div></td></tr>
+<tr><td><a href="Main.html#VALbackend_init_state">backend_init_state</a> [<a href="Main.html">Main</a>]</td>
+<td></td></tr>
+<tr><td><a href="Map_builder.html#VALbeach">beach</a> [<a href="Map_builder.html">Map_builder</a>]</td>
+<td><div class="info">
+<p><code class="code">beach</code> is the field for map with image "sand", it is going to be 
+    filled with Graphics.image</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALbeginning">beginning</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">beginning ()</code> draws logo and the beginning interface and start the game</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALbotton_drawing_helper">botton_drawing_helper</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">botton_draw_helper int</code> draws <code class="code">int</code>-1 botton at the lower right
+    corner, and store these botton as interactive event into cplace
+    Require: <code class="code">int</code> is a int</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Maps.html#VALbound_check">bound_check</a> [<a href="Maps.html">Maps</a>]</td>
+<td><div class="info">
+<p><code class="code">bound_check m c r</code> returns whether column <code class="code">c</code> and row <code class="code">r</code> satisfy 
+   is within the bounds of the map <code class="code">m</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALbox_drawing_helper">box_drawing_helper</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">box_drawing_helper ()</code> draws the weapon and food inventory 
+   on the given window</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Builder.html#VALbranch_map_instr">branch_map_instr</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">branch_map_instr</code> is the instruction in which the player has entered
+   a branched map.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Builder.html#VALbranch_map_store">branch_map_store</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">branch_map_store</code> keeps track of the list of item names and their 
+   corresponding locations.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Color_convert.html#VALbread_80">bread_80</a> [<a href="Color_convert.html">Color_convert</a>]</td>
+<td><div class="info">
+<p><code class="code">bread_80</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"bread_80"</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Builder.html#VALbrowse_dir_enemy">browse_dir_enemy</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">browse_dir_enemy h lst</code> is a list of enemy json files 
+   extracted from the directory handler <code class="code">h</code> and file list <code class="code">lst</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Builder.html#VALbrowse_one_enemy_json">browse_one_enemy_json</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">browse_one_enemy_json j col row</code> calls 
+    <code class="code">single_enemy_builder j col row</code> if <code class="code">j</code> is a valid enemy json
+    representation.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Builder.html#VALbuild_one_map">build_one_map</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">build_one_map s</code> returns the constructed map from the json file name <code class="code">s</code>.</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>C</div></td></tr>
+<tr><td><a href="Gui.html#VALcd_mon">cd_mon</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">cd_mon()</code> check the cool down time for each skill and update it in cplace</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALcd_store">cd_store</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">cd_store</code> is the default player's skill state</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Engine.html#VALchange_player">change_player</a> [<a href="Engine.html">Engine</a>]</td>
+<td><div class="info">
+<p><code class="code">change_player p s</code> changes the player in game state <code class="code">s</code> to <code class="code">p</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Engine.html#VALcheck_branch_map_status">check_branch_map_status</a> [<a href="Engine.html">Engine</a>]</td>
+<td><div class="info">
+<p><code class="code">check_branch_map_status s</code> returns whether the player at state <code class="code">s</code> has 
+   finished his current branched map.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Engine.html#VALcheck_current_linked_map">check_current_linked_map</a> [<a href="Engine.html">Engine</a>]</td>
+<td><div class="info">
+<p><code class="code">check_current_linked_map s</code> returns <code class="code">(false, "")</code> if the current map in 
+   state <code class="code">s</code> is not <code class="code">"main"</code> or if the player at state <code class="code">s</code> is not found in the 
+   branced map info.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Engine.html#VALcheck_enemy">check_enemy</a> [<a href="Engine.html">Engine</a>]</td>
+<td><div class="info">
+<p><code class="code">check_enemy s store</code> checks whether there is an enemy at the player
+   location at states <code class="code">s</code>, and if so, appends the enemy in <code class="code">store</code> and 
+   raises <code class="code">SuccessExit</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Engine.html#VALcheck_enemy_in_current_loc">check_enemy_in_current_loc</a> [<a href="Engine.html">Engine</a>]</td>
+<td><div class="info">
+<p><code class="code">check_enemy_in_current_loc s</code> is <code class="code">(true, str)</code> if there exists an 
+   enemy at the current location of the player at state <code class="code">s</code>, and 
+   <code class="code">(false, "")</code> otherwise.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Engine.html#VALcheck_food_on_loc_and_return_name_list">check_food_on_loc_and_return_name_list</a> [<a href="Engine.html">Engine</a>]</td>
+<td><div class="info">
+<p><code class="code">check_food_on_loc_and_return_name_list s loc</code> returns a list of food names
+   (possibly empty) are at the location <code class="code">loc</code> 
+   in the current map in state <code class="code">s</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Engine.html#VALcheck_item_on_player_ground">check_item_on_player_ground</a> [<a href="Engine.html">Engine</a>]</td>
+<td><div class="info">
+<p><code class="code">check_item_on_player_ground s</code> is a tuple of 
+   (food_name list,  weapon_name list) at player's current position
+   at state <code class="code">s</code> 
+   Requires: Player MUST BE Alive</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Engine.html#VALcheck_weapon_on_loc_and_return_name_list">check_weapon_on_loc_and_return_name_list</a> [<a href="Engine.html">Engine</a>]</td>
+<td><div class="info">
+<p><code class="code">check_weapon_on_loc_and_return_name_list s loc</code> returns a list of 
+   weapon names (possibly empty) that are at the location <code class="code">loc</code> 
+   in the current map in state <code class="code">s</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Engine.html#VALcheck_wins">check_wins</a> [<a href="Engine.html">Engine</a>]</td>
+<td><div class="info">
+<p><code class="code">check_wins s</code> returns whether the player at state <code class="code">s</code> is in the 
+   winning state.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.P.html#VALchoose_skill">choose_skill</a> [<a href="Player.P.html">Player.P</a>]</td>
+<td><div class="info">
+<p><code class="code">choose_skill p s</code> will update the cd of skill <code class="code">s</code> in player <code class="code">p</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.Player.html#VALchoose_skill">choose_skill</a> [<a href="Player.Player.html">Player.Player</a>]</td>
+<td><div class="info">
+<p><code class="code">choose_skill p s</code> will update the cd of skill <code class="code">s</code> in player <code class="code">p</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Engine.html#VALchoose_skill_random">choose_skill_random</a> [<a href="Engine.html">Engine</a>]</td>
+<td><div class="info">
+<p><code class="code">choose_skill_random t</code> is a (skill name, skill strength) for enemy <code class="code">t</code>, 
+   chosen randomly from all of enemy <code class="code">t</code>'s skills</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALclear_screen">clear_screen</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">clear_screen ()</code> clears the screen if irefresh is true</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Color_convert.html#VALcoffee_80">coffee_80</a> [<a href="Color_convert.html">Color_convert</a>]</td>
+<td><div class="info">
+<p><code class="code">coffee_80</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"coffee_80"</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.P.html#VALcol">col</a> [<a href="Player.P.html">Player.P</a>]</td>
+<td><div class="info">
+<p><code class="code">col p</code> is the current col coordinate of player <code class="code">p</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.Player.html#VALcol">col</a> [<a href="Player.Player.html">Player.Player</a>]</td>
+<td><div class="info">
+<p><code class="code">col p</code> is the current col coordinate of player <code class="code">p</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALcombat">combat</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">combat id</code> is the main function for combat, it start a combat with
+    enemy with <code class="code">id</code> and draw information on the screen
+    Requires: <code class="code">id</code> is a vaild enemy id</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALcombat_botton_helper">combat_botton_helper</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">combat_botton_helper()</code> draws bottons according to number of available
+    skills at the lower-right corner</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALcombat_four_botton">combat_four_botton</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">combat_four_botton int</code> draws <code class="code">int</code> botton at the lower right
+    corner, and store these botton as interactive event into cplace
+    Require: <code class="code">int</code> is a int</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALcombat_mon">combat_mon</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">combat_mon()</code> checks the emeny in combat field in cplace and 
+    start a combat when the field is not "none"</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Enemy.EnemySig.html#VALconstructor">constructor</a> [<a href="Enemy.EnemySig.html">Enemy.EnemySig</a>]</td>
+<td><div class="info">
+<p><code class="code">constructor p l exp h id n d max_hp s</code> constructs a new enemy module 
+     located at position <code class="code">p</code> with experience <code class="code">exp</code>, hp <code class="code">hp</code>, id # <code class="code">id</code>, 
+     name <code class="code">n</code>, maximum hp <code class="code">max_hp</code> and a list of skills <code class="code">s</code> at level <code class="code">l</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Enemy.Enemy.html#VALconstructor">constructor</a> [<a href="Enemy.Enemy.html">Enemy.Enemy</a>]</td>
+<td><div class="info">
+<p><code class="code">constructor p l exp h id n d max_hp s</code> constructs a new enemy module 
+       located at position <code class="code">p</code> with experience <code class="code">exp</code>, hp <code class="code">hp</code>, id # <code class="code">id</code>, 
+       name <code class="code">n</code>, maximum hp <code class="code">max_hp</code> and a list of skills <code class="code">s</code> at level <code class="code">l</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Weapons.W.html#VALconstructor">constructor</a> [<a href="Weapons.W.html">Weapons.W</a>]</td>
+<td><div class="info">
+<p>Constructor of a weapon</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Weapons.Weapon.html#VALconstructor">constructor</a> [<a href="Weapons.Weapon.html">Weapons.Weapon</a>]</td>
+<td><div class="info">
+<p>Constructor of a weapon</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Foods.F.html#VALconstructor">constructor</a> [<a href="Foods.F.html">Foods.F</a>]</td>
+<td><div class="info">
+<p>Constructor of a food</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Foods.Food.html#VALconstructor">constructor</a> [<a href="Foods.Food.html">Foods.Food</a>]</td>
+<td></td></tr>
+<tr><td><a href="Player.P.html#VALconstructor">constructor</a> [<a href="Player.P.html">Player.P</a>]</td>
+<td><div class="info">
+<p><code class="code">constructor s h l e ()</code> constructs a new player module located at
+      row 1, col 1, with strength <code class="code">s</code>, health <code class="code">h</code>, experience <code class="code">e</code>, 
+      at level <code class="code">l</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.Player.html#VALconstructor">constructor</a> [<a href="Player.Player.html">Player.Player</a>]</td>
+<td><div class="info">
+<p><code class="code">constructor s h l e ()</code> constructs a new player module located at
+        row 1, col 1, with strength <code class="code">s</code>, health <code class="code">h</code>, experience <code class="code">e</code>, 
+        at level <code class="code">l</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Builder.html#VALcontains">contains</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">contains s s1</code> is true if <code class="code">s</code> contains substring <code class="code">s1</code>, <code class="code">false</code> 
+   otherwise</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Builder.html#VALcount">count</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">count ()</code> returns an #, which represents the # of times
+   this function has been called.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALcplace">cplace</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">cplace</code> represents the initial display information when game starts,
+   and updates of information will be stored here</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALcreate_button">create_button</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">create_button text color tcolor x y w h trigger</code> 
+   displays a button with color tcolor in the center of the box
+   with lower-left point at <code class="code">x,y</code> and with width<code class="code">w</code> height <code class="code">h</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Color_convert.html#VALcurse">curse</a> [<a href="Color_convert.html">Color_convert</a>]</td>
+<td><div class="info">
+<p><code class="code">curse</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"curse"</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Color_convert.html#VALcute_cat">cute_cat</a> [<a href="Color_convert.html">Color_convert</a>]</td>
+<td><div class="info">
+<p><code class="code">cute_cat</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"cute cat"</code></p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>D</div></td></tr>
+<tr><td><a href="Color_convert.html#VALdagger_80">dagger_80</a> [<a href="Color_convert.html">Color_convert</a>]</td>
+<td><div class="info">
+<p><code class="code">dagger_80</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"dagger_80"</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Engine.html#VALdelete_map_pos">delete_map_pos</a> [<a href="Engine.html">Engine</a>]</td>
+<td><div class="info">
+<p><code class="code">delete_map_pos s pos name</code> deletes the items of the item arrays 
+   at index <code class="code">pos</code> in state <code class="code">s</code> with map name as <code class="code">name</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Engine.html#VALdelete_one_enemy_from_state">delete_one_enemy_from_state</a> [<a href="Engine.html">Engine</a>]</td>
+<td><div class="info">
+<p><code class="code">delete_one_enemy_from_state s</code> deletes the enemy with player's current
+   location at state <code class="code">s</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALdialog">dialog</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">dialog text npc name</code> draws a dialog box, showing <code class="code">text</code> on screen with 
+    picture <code class="code">npc</code> shown at upper-left corner with <code class="code">name</code>
+    Requires: 
+    <code class="code">npc</code> is a color matrix</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Color_convert.html#VALdirt_120">dirt_120</a> [<a href="Color_convert.html">Color_convert</a>]</td>
+<td><div class="info">
+<p><code class="code">dirt_120</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"dirt-120"</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Map_builder.html#VALdraw">draw</a> [<a href="Map_builder.html">Map_builder</a>]</td>
+<td><div class="info">
+<p><code class="code">draw()</code> draws items, player and maps</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALdraw_a_image">draw_a_image</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">draw_a_image image x y</code> draws the <code class="code">image</code> on position <code class="code">(x,y)</code> on screen</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALdraw_cd">draw_cd</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">draw_cd()</code> draws the cool down time for advanced skill when the player
+    is in the combat stage</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Map_builder.html#VALdraw_enemy">draw_enemy</a> [<a href="Map_builder.html">Map_builder</a>]</td>
+<td><div class="info">
+<p><code class="code">draw_food rr cr interval e</code> draws everything in <code class="code">e</code> with
+    <code class="code">rr,cr</code> as the lower-left point and each points have a interval of 
+    <code class="code">interval</code>
+    Requires: <code class="code">rr</code>,<code class="code">cr</code>,<code class="code">interval</code> are positive int or 0
+    <code class="code">e</code> is a vaild enemy list</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALdraw_food">draw_food</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">draw_food foods int</code> draws the first item of <code class="code">foods</code> at <code class="code">int</code>th
+    slot of the inventory
+    Requires: <code class="code">foods</code> is a food_item list
+    <code class="code">int</code> is grester than or equal to 0 and less then 3</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Map_builder.html#VALdraw_food">draw_food</a> [<a href="Map_builder.html">Map_builder</a>]</td>
+<td><div class="info">
+<p><code class="code">draw_food rr cr interval f</code> draws everything in <code class="code">f</code> with
+    <code class="code">rr,cr</code> as the lower-left point and each points have a interval of 
+    <code class="code">interval</code>
+    Requires: <code class="code">rr</code>,<code class="code">cr</code>,<code class="code">interval</code> are positive int or 0
+    <code class="code">f</code> is a vaild food list</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALdraw_inventory">draw_inventory</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">draw_inventory ()</code> draws player's inventory on a given window</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALdraw_inventory_item_helper">draw_inventory_item_helper</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">draw_inventory_item_helper name</code> is the image representing skill with
+    <code class="code">name</code>
+    Requires: <code class="code">name</code> is availd skill name</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Map_builder.html#VALdraw_items">draw_items</a> [<a href="Map_builder.html">Map_builder</a>]</td>
+<td><div class="info">
+<p><code class="code">draw_items()</code> draws every items, including foods, weapons, enemies,
+    and portals, on the map</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Map_builder.html#VALdraw_player">draw_player</a> [<a href="Map_builder.html">Map_builder</a>]</td>
+<td><div class="info">
+<p><code class="code">draw_player ()</code> draws the player on the GUI and returns <code class="code">()</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALdraw_weapon">draw_weapon</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">draw_weapon weapons int</code> draws the first item of <code class="code">weapons</code> at <code class="code">int</code>th
+    slot of the inventory
+    Requires: <code class="code">weapons</code> is a weapon_item list
+    <code class="code">int</code> is grester than or equal to 0 and less then 3</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Map_builder.html#VALdraw_weapon">draw_weapon</a> [<a href="Map_builder.html">Map_builder</a>]</td>
+<td><div class="info">
+<p><code class="code">draw_weapon rr cr interval w</code> draws everything in <code class="code">w</code> with
+    <code class="code">rr,cr</code> as the lower-left point and each points have a interval of 
+    <code class="code">interval</code>
+    Requires: <code class="code">rr</code>,<code class="code">cr</code>,<code class="code">interval</code> are positive int or 0
+    <code class="code">w</code> is a vaild weapon list</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Engine.html#VALdrop_one_food">drop_one_food</a> [<a href="Engine.html">Engine</a>]</td>
+<td><div class="info">
+<p><code class="code">drop_one_food s pos</code> drops the food at index <code class="code">pos</code> of the player's 
+   food inventory to the player's current location at state <code class="code">s</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Engine.html#VALdrop_one_food_to_current_location">drop_one_food_to_current_location</a> [<a href="Engine.html">Engine</a>]</td>
+<td><div class="info">
+<p><code class="code">drop_one_food_to_current_location s pos</code> drops the food at index <code class="code">pos</code> 
+   of the player's food inventory to the player's current location at state 
+   <code class="code">s</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Engine.html#VALdrop_one_weapon">drop_one_weapon</a> [<a href="Engine.html">Engine</a>]</td>
+<td><div class="info">
+<p><code class="code">drop_one_weapon s pos</code> drops the weapon at index <code class="code">pos</code> of the player's 
+   weapon inventory to the player's current location at state <code class="code">s</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Engine.html#VALdrop_one_weapon_to_current_location">drop_one_weapon_to_current_location</a> [<a href="Engine.html">Engine</a>]</td>
+<td><div class="info">
+<p><code class="code">drop_one_weapon_to_current_location s pos</code> drops the weapon at index 
+   <code class="code">pos</code> of the player's weapon inventory to the player's current location 
+   at state <code class="code">s</code>.</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>E</div></td></tr>
+<tr><td><a href="Engine.html#VALeat_one_food_in_inventory">eat_one_food_in_inventory</a> [<a href="Engine.html">Engine</a>]</td>
+<td><div class="info">
+<p><code class="code">eat_one_food_in_inventory s pos</code> eats the food from the player's current
+   location, if any, with the player increasing health and strength and the 
+   food at index <code class="code">pos</code> removed from the player's inventory at state <code class="code">s</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Color_convert.html#VALenemy_data">enemy_data</a> [<a href="Color_convert.html">Color_convert</a>]</td>
+<td><div class="info">
+<p><code class="code">enemy_data</code> is the list that contains a single <code class="code">eimage</code> with the minion 
+   image.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALenemy_health_bar">enemy_health_bar</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">enemy_health_bar e</code> displays the current health of
+   enemy <code class="code">e</code> on a given window</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Builder.html#VALenemy_instr">enemy_instr</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">enemy_instr s</code> is the instruction regarding enemies at state <code class="code">s</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Builder.html#VALenemy_instr_helper">enemy_instr_helper</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">enemy_instr_helper s store</code> loads the instruction regarding enemies at 
+   state <code class="code">s</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALenemy_list">enemy_list</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">enemy_list()</code> is the list of all enemy in the current map</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALenemy_loc_mon">enemy_loc_mon</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">enemy_loc_mon()</code> checks the is emeny at the same loction as the player
+    and updated in cplace</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALenemy_mon">enemy_mon</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">enemy id</code> is false if that enemy, with <code class="code">id</code>, has a 0 hp, otherwise true
+    Requires: <code class="code">id</code> is a vaild enemy id</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Color_convert.html#VALenemy_punch">enemy_punch</a> [<a href="Color_convert.html">Color_convert</a>]</td>
+<td><div class="info">
+<p><code class="code">enemy_punch</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"stab"</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Color_convert.html#VALenemy_scar">enemy_scar</a> [<a href="Color_convert.html">Color_convert</a>]</td>
+<td><div class="info">
+<p><code class="code">enemy_scar</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"scar-200"</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALenemy_skill">enemy_skill</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">enemy_skill t</code> draws a random skill image of enemy <code class="code">t</code>
+    and reduce player's health
+    by the strength of that randomly chosen skill
+    Requires: <code class="code">t</code> is a vaild Enemy.t</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Builder.html#VALenemy_skill_constructor">enemy_skill_constructor</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">enemy_skill_constructor skills</code> returns the parsed list of enemy skills
+   in the json list <code class="code">skills</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALenemy_skill_drawing_helper">enemy_skill_drawing_helper</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">enemy_skill_drawing_helper ()</code> draws a randomly chosen skill of the enmey
+    that is stored in cplace on the screen</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALenemy_skill_image">enemy_skill_image</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">enemy_skill_image name</code> draws the image representing skill with
+    <code class="code">name</code>
+    Require: <code class="code">name</code> is a vaild skill name</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Engine.html#VALequip_one_weapon">equip_one_weapon</a> [<a href="Engine.html">Engine</a>]</td>
+<td><div class="info">
+<p><code class="code">equip_one_weapon s</code> will check player's inventory and equip player with
+   weapon of player's current location if possible.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Engine.html#VALequip_weapon_in_current_loc">equip_weapon_in_current_loc</a> [<a href="Engine.html">Engine</a>]</td>
+<td><div class="info">
+<p><code class="code">equip_weapon_in_current_loc s</code> will update the weapon inventory of 
+   game state <code class="code">s</code> if there is any empty slot and weapon in player's current 
+   location will be equipped in that slot.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.P.html#VALexperience">experience</a> [<a href="Player.P.html">Player.P</a>]</td>
+<td><div class="info">
+<p><code class="code">experience p</code> is the current experience value of player <code class="code">p</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.Player.html#VALexperience">experience</a> [<a href="Player.Player.html">Player.Player</a>]</td>
+<td><div class="info">
+<p><code class="code">experience p</code> is the current experience value of player <code class="code">p</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALexperience_bar">experience_bar</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">experience_bar ()</code> displays the player's current experience on a given 
+   window</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>F</div></td></tr>
+<tr><td><a href="Gui.html#VALfensor">fensor</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">fensor stage</code> detects the interactive events from keyboard and mouse
+    and perform action according to the events and <code class="code">stage</code>
+    Require: <code class="code">stage</code> is a vaild stage</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Map_builder.html#VALfield">field</a> [<a href="Map_builder.html">Map_builder</a>]</td>
+<td><div class="info">
+<p><code class="code">field</code> is the field for map with image "field", it is going to be 
+    filled with Graphics.image</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Engine.html#VALfilter_one_element_out_from_array">filter_one_element_out_from_array</a> [<a href="Engine.html">Engine</a>]</td>
+<td><div class="info">
+<p><code class="code">filter_one_element_out_from_array arr pos</code> returns the array <code class="code">arr</code> 
+   without the element at index <code class="code">pos</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALfind_enemy_image_data">find_enemy_image_data</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">find_enemy_image data name lst</code> is the color matrix of the enemy with
+    <code class="code">name</code>
+    Require: <code class="code">name</code> is a enmey name string,
+    <code class="code">lst</code> is a eimage list</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Engine.html#VALfind_one_map_by_name">find_one_map_by_name</a> [<a href="Engine.html">Engine</a>]</td>
+<td><div class="info">
+<p><code class="code">find_one_map_by_name s name</code> is the map with its name as <code class="code">name</code> from
+   all maps in <code class="code">s</code>
+   Requires: map with name <code class="code">map_name</code> must be inside <code class="code">lst</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Color_convert.html#VALfire">fire</a> [<a href="Color_convert.html">Color_convert</a>]</td>
+<td><div class="info">
+<p><code class="code">fire</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"fore"</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Color_convert.html#VALfireball">fireball</a> [<a href="Color_convert.html">Color_convert</a>]</td>
+<td><div class="info">
+<p><code class="code">fireball</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"fireball"</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Builder.html#VALfood_array_builder">food_array_builder</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">food_array_builder loc_array col row j_arr</code> constructs a new food array 
+   represented by the json array <code class="code">j_arr</code> with the dimensions <code class="code">col</code> by <code class="code">row</code>,
+   without the locations in <code class="code">loc_array</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALfood_check">food_check</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">food_check i</code> checks if the <code class="code">i</code>th item in food inventory is eaten or not
+    ;if not <code class="code">food_check</code> 
+    update the item_selected field to the item in the cplace
+    Require: <code class="code">int</code> is a int that greater then or equal to 0 and less than 3</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALfood_full_mon">food_full_mon</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">food_full_mon ()</code> is true if food inventory is full; false if not full</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Builder.html#VALfood_instr">food_instr</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">food_instr s</code> is the instruction regarding foods at state <code class="code">s</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Builder.html#VALfood_instr_helper">food_instr_helper</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">food_instr_helper s store</code> loads the instruction regarding foods at 
+   state <code class="code">s</code>.</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>G</div></td></tr>
+<tr><td><a href="Builder.html#VALgainable_skill_constructor">gainable_skill_constructor</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">gainable_skill_constructor jsons</code> returns the list of gainable skills 
+   parsed from the json list <code class="code">jsons</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALgame_over_mon">game_over_mon</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">game_over_mon ()</code> is unit if the player has a positive health;
+    if player has 0 health, it draws game over dialog box and shut the game
+    down</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Engine.html#VALgame_state">game_state</a> [<a href="Engine.html">Engine</a>]</td>
+<td><div class="info">
+<p><code class="code">game_state</code> is the initial game state</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.P.html#VALget_all_skill_format">get_all_skill_format</a> [<a href="Player.P.html">Player.P</a>]</td>
+<td><div class="info">
+<p><code class="code">get_all_skill_format s</code> is a list of (skill name, skill cd)</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.Player.html#VALget_all_skill_format">get_all_skill_format</a> [<a href="Player.Player.html">Player.Player</a>]</td>
+<td><div class="info">
+<p><code class="code">get_all_skill_format s</code> is a list of (skill name, skill cd)</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Enemy.EnemySig.html#VALget_all_skills_name">get_all_skills_name</a> [<a href="Enemy.EnemySig.html">Enemy.EnemySig</a>]</td>
+<td><div class="info">
+<p><code class="code">get_all_skills_name e</code> returns a list of all the skill names of 
+     the enemy <code class="code">e</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Enemy.Enemy.html#VALget_all_skills_name">get_all_skills_name</a> [<a href="Enemy.Enemy.html">Enemy.Enemy</a>]</td>
+<td></td></tr>
+<tr><td><a href="Enemy.EnemySig.html#VALget_all_skills_name_prob_and_strength_to_assoc_list">get_all_skills_name_prob_and_strength_to_assoc_list</a> [<a href="Enemy.EnemySig.html">Enemy.EnemySig</a>]</td>
+<td><div class="info">
+<p><code class="code">get_all_skills_name_prob_and_strength_to_assoc_list e</code> returns 
+     <code class="code">[(n1,p1,s1); (n2,p2,s2); ... ]</code>
+     where <code class="code">ni</code> is the name of an enemy <code class="code">e</code>'s skill at index <code class="code">i</code>, 
+     <code class="code">pi</code> is the skill probability of enemy <code class="code">e</code>'s skill at index <code class="code">i</code>, 
+     and <code class="code">si</code> is the strength of the enemy <code class="code">e</code>'s particular skill at index <code class="code">i</code>, 
+     for all <code class="code">i</code> between 1 and <code class="code">List.length s.skills</code>, inclusive.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Enemy.Enemy.html#VALget_all_skills_name_prob_and_strength_to_assoc_list">get_all_skills_name_prob_and_strength_to_assoc_list</a> [<a href="Enemy.Enemy.html">Enemy.Enemy</a>]</td>
+<td><div class="info">
+<p><code class="code">get_all_skills_name_prob_and_strength_to_assoc_list e</code> returns 
+       <code class="code">[(n1,p1,s1); (n2,p2,s2); ... ]</code>
+       where <code class="code">ni</code> is the name of an enemy <code class="code">e</code>'s skill at index <code class="code">i</code>, 
+       <code class="code">pi</code> is the skill probability of enemy <code class="code">e</code>'s skill at index <code class="code">i</code>, and <code class="code">si</code> 
+       is the strength of the enemy <code class="code">e</code>'s particular skill at index <code class="code">i</code>,
+        for all <code class="code">i</code> between 1 and <code class="code">List.length s.skills</code>, inclusive.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Builder.html#VALget_current_map_name">get_current_map_name</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">get_current_map_name s</code> is the name of the current map in game state <code class="code">s</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Builder.html#VALget_current_map_size">get_current_map_size</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">get_current_map_size s</code> is the size of the current map in game state <code class="code">s</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Enemy.EnemySig.html#VALget_description">get_description</a> [<a href="Enemy.EnemySig.html">Enemy.EnemySig</a>]</td>
+<td><div class="info">
+<p><code class="code">get_description e</code> returns the description of the enemy <code class="code">e</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Enemy.Enemy.html#VALget_description">get_description</a> [<a href="Enemy.Enemy.html">Enemy.Enemy</a>]</td>
+<td><div class="info">
+<p><code class="code">get_description e</code> returns the description of the enemy <code class="code">e</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Weapons.W.html#VALget_description">get_description</a> [<a href="Weapons.W.html">Weapons.W</a>]</td>
+<td><div class="info">
+<p><code class="code">get_description w</code> is the description of the weapon <code class="code">w</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Weapons.Weapon.html#VALget_description">get_description</a> [<a href="Weapons.Weapon.html">Weapons.Weapon</a>]</td>
+<td><div class="info">
+<p><code class="code">get_description w</code> is the description of the weapon <code class="code">w</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Foods.F.html#VALget_description">get_description</a> [<a href="Foods.F.html">Foods.F</a>]</td>
+<td><div class="info">
+<p><code class="code">get_description f</code> is the description of the food <code class="code">f</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Foods.Food.html#VALget_description">get_description</a> [<a href="Foods.Food.html">Foods.Food</a>]</td>
+<td><div class="info">
+<p><code class="code">get_description f</code> is the description of the food <code class="code">f</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Builder.html#VALget_enemies">get_enemies</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">get_enemies s</code> is all the enemies in game state <code class="code">s</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Enemy.EnemySig.html#VALget_experience">get_experience</a> [<a href="Enemy.EnemySig.html">Enemy.EnemySig</a>]</td>
+<td><div class="info">
+<p><code class="code">get_experience e</code> returns the experience amount of the enemy <code class="code">e</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Enemy.Enemy.html#VALget_experience">get_experience</a> [<a href="Enemy.Enemy.html">Enemy.Enemy</a>]</td>
+<td><div class="info">
+<p><code class="code">get_experience e</code> returns the experience amount of the enemy <code class="code">e</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Enemy.EnemySig.html#VALget_gainable_skill">get_gainable_skill</a> [<a href="Enemy.EnemySig.html">Enemy.EnemySig</a>]</td>
+<td><div class="info">
+<p><code class="code">get_gainable_skill t</code> is the gainable player skills list</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Enemy.Enemy.html#VALget_gainable_skill">get_gainable_skill</a> [<a href="Enemy.Enemy.html">Enemy.Enemy</a>]</td>
+<td><div class="info">
+<p><code class="code">get_gainable_skill t</code> is the gainable player skills list</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Weapons.W.html#VALget_gainables">get_gainables</a> [<a href="Weapons.W.html">Weapons.W</a>]</td>
+<td><div class="info">
+<p><code class="code">get_gainables w</code> is the skill gainables of weapon <code class="code">w</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Weapons.Weapon.html#VALget_gainables">get_gainables</a> [<a href="Weapons.Weapon.html">Weapons.Weapon</a>]</td>
+<td><div class="info">
+<p><code class="code">get_gainables w</code> is the skill gainables of weapon <code class="code">w</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Foods.F.html#VALget_gainables">get_gainables</a> [<a href="Foods.F.html">Foods.F</a>]</td>
+<td><div class="info">
+<p><code class="code">get_gainables f</code> is the skill gainables of food <code class="code">f</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Foods.Food.html#VALget_gainables">get_gainables</a> [<a href="Foods.Food.html">Foods.Food</a>]</td>
+<td><div class="info">
+<p><code class="code">get_gainables f</code> is the skill gainables of food <code class="code">f</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Foods.F.html#VALget_health">get_health</a> [<a href="Foods.F.html">Foods.F</a>]</td>
+<td><div class="info">
+<p><code class="code">get_health f</code> is the health of the food <code class="code">f</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Foods.Food.html#VALget_health">get_health</a> [<a href="Foods.Food.html">Foods.Food</a>]</td>
+<td><div class="info">
+<p><code class="code">get_health f</code> is the health of the food <code class="code">f</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Enemy.EnemySig.html#VALget_hp">get_hp</a> [<a href="Enemy.EnemySig.html">Enemy.EnemySig</a>]</td>
+<td><div class="info">
+<p><code class="code">get_hp e</code> returns the current hp amount of the enemy <code class="code">e</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Enemy.Enemy.html#VALget_hp">get_hp</a> [<a href="Enemy.Enemy.html">Enemy.Enemy</a>]</td>
+<td><div class="info">
+<p><code class="code">get_hp e</code> returns the current hp amount of the enemy <code class="code">e</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Enemy.EnemySig.html#VALget_id">get_id</a> [<a href="Enemy.EnemySig.html">Enemy.EnemySig</a>]</td>
+<td><div class="info">
+<p><code class="code">get_id e</code> returns the id # of the enemy <code class="code">e</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Enemy.Enemy.html#VALget_id">get_id</a> [<a href="Enemy.Enemy.html">Enemy.Enemy</a>]</td>
+<td><div class="info">
+<p><code class="code">get_id e</code> returns the id # of the enemy <code class="code">e</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Enemy.EnemySig.html#VALget_level">get_level</a> [<a href="Enemy.EnemySig.html">Enemy.EnemySig</a>]</td>
+<td><div class="info">
+<p><code class="code">get_level e</code> returns the current level that the enemy <code class="code">e</code> is on.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Enemy.Enemy.html#VALget_level">get_level</a> [<a href="Enemy.Enemy.html">Enemy.Enemy</a>]</td>
+<td><div class="info">
+<p><code class="code">get_level e</code> returns the current level that the enemy <code class="code">e</code> is on.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Maps.MP.html#VALget_link">get_link</a> [<a href="Maps.MP.html">Maps.MP</a>]</td>
+<td><div class="info">
+<p><code class="code">get_link mp</code> is the link of the map param <code class="code">mp</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Maps.MapParam.html#VALget_link">get_link</a> [<a href="Maps.MapParam.html">Maps.MapParam</a>]</td>
+<td><div class="info">
+<p><code class="code">get_name mp</code> is the name of the map param <code class="code">mp</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Weapons.W.html#VALget_loc">get_loc</a> [<a href="Weapons.W.html">Weapons.W</a>]</td>
+<td><div class="info">
+<p><code class="code">get_loc w</code> is the location of the weapon <code class="code">w</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Weapons.Weapon.html#VALget_loc">get_loc</a> [<a href="Weapons.Weapon.html">Weapons.Weapon</a>]</td>
+<td><div class="info">
+<p><code class="code">get_loc w</code> is the location of the weapon <code class="code">w</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Foods.F.html#VALget_loc">get_loc</a> [<a href="Foods.F.html">Foods.F</a>]</td>
+<td><div class="info">
+<p><code class="code">get_loc f</code> is the location of the food <code class="code">f</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Foods.Food.html#VALget_loc">get_loc</a> [<a href="Foods.Food.html">Foods.Food</a>]</td>
+<td><div class="info">
+<p><code class="code">get_loc f</code> is the location of the food <code class="code">f</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Builder.html#VALget_map">get_map</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">get_map s</code> is the current map in game state <code class="code">s</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Engine.html#VALget_map_index_by_name">get_map_index_by_name</a> [<a href="Engine.html">Engine</a>]</td>
+<td><div class="info">
+<p><code class="code">get_map_index_by_name s name</code> returns the index of the map in game state
+   <code class="code">s</code> with the corresponding name <code class="code">name</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Enemy.EnemySig.html#VALget_max_hp">get_max_hp</a> [<a href="Enemy.EnemySig.html">Enemy.EnemySig</a>]</td>
+<td><div class="info">
+<p><code class="code">get_max_hp e</code> returns the maximum hp of the enemy <code class="code">e</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Enemy.Enemy.html#VALget_max_hp">get_max_hp</a> [<a href="Enemy.Enemy.html">Enemy.Enemy</a>]</td>
+<td><div class="info">
+<p><code class="code">get_max_hp e</code> returns the maximum hp of the enemy <code class="code">e</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Enemy.EnemySig.html#VALget_name">get_name</a> [<a href="Enemy.EnemySig.html">Enemy.EnemySig</a>]</td>
+<td><div class="info">
+<p><code class="code">get_name e</code> returns the name of the enemy <code class="code">e</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Enemy.Enemy.html#VALget_name">get_name</a> [<a href="Enemy.Enemy.html">Enemy.Enemy</a>]</td>
+<td><div class="info">
+<p><code class="code">get_name e</code> returns the name of the enemy <code class="code">e</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Maps.MP.html#VALget_name">get_name</a> [<a href="Maps.MP.html">Maps.MP</a>]</td>
+<td><div class="info">
+<p><code class="code">get_name mp</code> is the name of the map param <code class="code">mp</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Maps.MapParam.html#VALget_name">get_name</a> [<a href="Maps.MapParam.html">Maps.MapParam</a>]</td>
+<td><div class="info">
+<p><code class="code">get_link mp</code> is the link of the map param <code class="code">mp</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Weapons.W.html#VALget_name">get_name</a> [<a href="Weapons.W.html">Weapons.W</a>]</td>
+<td><div class="info">
+<p><code class="code">get_name w</code> is the name of the weapon <code class="code">w</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Weapons.Weapon.html#VALget_name">get_name</a> [<a href="Weapons.Weapon.html">Weapons.Weapon</a>]</td>
+<td><div class="info">
+<p><code class="code">get_name w</code> is the name of the weapon <code class="code">w</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Foods.F.html#VALget_name">get_name</a> [<a href="Foods.F.html">Foods.F</a>]</td>
+<td><div class="info">
+<p><code class="code">get_name f</code> is the name of the food <code class="code">f</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Foods.Food.html#VALget_name">get_name</a> [<a href="Foods.Food.html">Foods.Food</a>]</td>
+<td><div class="info">
+<p><code class="code">get_name f</code> is the name of the food <code class="code">f</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALget_one_enemy">get_one_enemy</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">get_one_enemy id lst</code> is the enemy with <code class="code">id</code> in the list
+    Requires: <code class="code">id</code> is a string
+    <code class="code">lst</code> is an ememy list
+    Raises: Not_such_enmey there is no enemy with id</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Maps.html#VALget_one_link_by_loc">get_one_link_by_loc</a> [<a href="Maps.html">Maps</a>]</td>
+<td><div class="info">
+<p><code class="code">get_one_link_by_loc t loc</code> returns the link of the map param 
+   at location <code class="code">loc</code> in map <code class="code">t</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Maps.html#VALget_one_map_param_by_loc">get_one_map_param_by_loc</a> [<a href="Maps.html">Maps</a>]</td>
+<td><div class="info">
+<p><code class="code">get_one_map_param_by_loc t loc</code> returns the map param at location <code class="code">loc</code> 
+   in map <code class="code">t</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Enemy.EnemySig.html#VALget_one_skill_strength_by_name">get_one_skill_strength_by_name</a> [<a href="Enemy.EnemySig.html">Enemy.EnemySig</a>]</td>
+<td><div class="info">
+<p><code class="code">get_one_skill_strength_by_name e n</code> returns the skill <code class="code">s</code> if the enemy
+     possesses the skill named <code class="code">n</code>; otherwise, raises <code class="code">UnknownSkill n</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Enemy.Enemy.html#VALget_one_skill_strength_by_name">get_one_skill_strength_by_name</a> [<a href="Enemy.Enemy.html">Enemy.Enemy</a>]</td>
+<td><div class="info">
+<p><code class="code">get_all_skills_name e</code> returns a list of all the skill names of 
+       the enemy <code class="code">e</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Builder.html#VALget_player">get_player</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">get_player s</code> returns the player if the player in game state <code class="code">s</code>
+   is alive.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALget_player_expeience">get_player_expeience</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">get_player_experience ()</code> is the player's current experience</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALget_player_health">get_player_health</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">get_player_health ()</code> is the max health of the player
+    with the current health</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALget_player_level">get_player_level</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">get_player_level ()</code> is the player's current level</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Enemy.EnemySig.html#VALget_pos">get_pos</a> [<a href="Enemy.EnemySig.html">Enemy.EnemySig</a>]</td>
+<td><div class="info">
+<p><code class="code">get_pos e</code> returns the current position of the enemy <code class="code">e</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Enemy.Enemy.html#VALget_pos">get_pos</a> [<a href="Enemy.Enemy.html">Enemy.Enemy</a>]</td>
+<td><div class="info">
+<p><code class="code">get_pos e</code> returns the current position of the enemy <code class="code">e</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.P.html#VALget_skill_by_skill_name">get_skill_by_skill_name</a> [<a href="Player.P.html">Player.P</a>]</td>
+<td><div class="info">
+<p><code class="code">get_skill_by_skill_name p n</code> returns skill <code class="code">s</code> with 
+     the name <code class="code">n</code> of player <code class="code">p</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.Player.html#VALget_skill_by_skill_name">get_skill_by_skill_name</a> [<a href="Player.Player.html">Player.Player</a>]</td>
+<td><div class="info">
+<p><code class="code">get_skill_by_skill_name p n</code> returns skill <code class="code">s</code> with 
+       the name <code class="code">n</code> of player <code class="code">p</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Weapons.W.html#VALget_strength">get_strength</a> [<a href="Weapons.W.html">Weapons.W</a>]</td>
+<td><div class="info">
+<p><code class="code">get_strength w</code> is the strength of the weapon <code class="code">w</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Weapons.Weapon.html#VALget_strength">get_strength</a> [<a href="Weapons.Weapon.html">Weapons.Weapon</a>]</td>
+<td><div class="info">
+<p><code class="code">get_strength w</code> is the strength of the weapon <code class="code">w</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Foods.F.html#VALget_strength">get_strength</a> [<a href="Foods.F.html">Foods.F</a>]</td>
+<td><div class="info">
+<p><code class="code">get_strength f</code> is the strength of the food <code class="code">f</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Foods.Food.html#VALget_strength">get_strength</a> [<a href="Foods.Food.html">Foods.Food</a>]</td>
+<td><div class="info">
+<p><code class="code">get_strength f</code> is the strength of the food <code class="code">f</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Map_builder.html#VALgrass">grass</a> [<a href="Map_builder.html">Map_builder</a>]</td>
+<td><div class="info">
+<p><code class="code">grass</code> is the field for map with image "grass", it is going to be 
+    filled with Graphics.image</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Color_convert.html#VALgrass_120">grass_120</a> [<a href="Color_convert.html">Color_convert</a>]</td>
+<td><div class="info">
+<p><code class="code">grass_120</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"grass-120"</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALgrey">grey</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">grey</code> is color grey</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALground_mon">ground_mon</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">ground_mon()</code> checks the if a item is on the ground and updated it
+    in cplace.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALground_probe">ground_probe</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">ground_probe()</code> is the item_ground representing what is on the ground.</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>H</div></td></tr>
+<tr><td><a href="Player.P.html#VALhealth">health</a> [<a href="Player.P.html">Player.P</a>]</td>
+<td><div class="info">
+<p><code class="code">health p</code> is the current health of player <code class="code">p</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.Player.html#VALhealth">health</a> [<a href="Player.Player.html">Player.Player</a>]</td>
+<td><div class="info">
+<p><code class="code">health p</code> is the current health of player <code class="code">p</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALhealth_bar">health_bar</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">health_bar ()</code> displays the player's current health on a given window</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Enemy.Enemy.html#VALhealth_increment">health_increment</a> [<a href="Enemy.Enemy.html">Enemy.Enemy</a>]</td>
+<td><div class="info">
+<p><code class="code">health_increment</code> is the health incr.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Engine.html#VALhelper_init">helper_init</a> [<a href="Engine.html">Engine</a>]</td>
+<td><div class="info">
+<p><code class="code">helper_init ()</code> is a helper function for <code class="code">init ()</code> that gets the 
+   necessary information for the initial state.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Color_convert.html#VALhit">hit</a> [<a href="Color_convert.html">Color_convert</a>]</td>
+<td><div class="info">
+<p><code class="code">hit</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"hit"</code></p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>I</div></td></tr>
+<tr><td><a href="Color_convert.html#VALimage_convert">image_convert</a> [<a href="Color_convert.html">Color_convert</a>]</td>
+<td><div class="info">
+<p><code class="code">image_convert json name</code> is the color matrix in file <code class="code">json</code>
+    with <code class="code">name</code>
+    Requires: <code class="code">json</code> is a vaild json file
+    <code class="code">name</code> is a vaild name in <code class="code">json</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Color_convert.html#VALimage_of_images">image_of_images</a> [<a href="Color_convert.html">Color_convert</a>]</td>
+<td><div class="info">
+<p><code class="code">image_of_images i</code> is the image that <code class="code">i</code> represents
+   Requires: <code class="code">i</code> is a valid JSON image representation.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Color_convert.html#VALimages_of_json">images_of_json</a> [<a href="Color_convert.html">Color_convert</a>]</td>
+<td><div class="info">
+<p><code class="code">images_of_json j</code> is the image list that <code class="code">j</code> represents
+   Requires: <code class="code">j</code> is a valid JSON image list representation.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.P.html#VALincrease_experience">increase_experience</a> [<a href="Player.P.html">Player.P</a>]</td>
+<td><div class="info">
+<p><code class="code">increase_experience p e</code> increases the experience of player <code class="code">p</code> by <code class="code">e</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.Player.html#VALincrease_experience">increase_experience</a> [<a href="Player.Player.html">Player.Player</a>]</td>
+<td><div class="info">
+<p><code class="code">increase_experience p e</code> increases the experience of player <code class="code">p</code> by <code class="code">e</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Enemy.EnemySig.html#VALincrease_health">increase_health</a> [<a href="Enemy.EnemySig.html">Enemy.EnemySig</a>]</td>
+<td><div class="info">
+<p><code class="code">increase_health t hp</code> will increase health <code class="code">hp</code> this enemy has</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Enemy.Enemy.html#VALincrease_health">increase_health</a> [<a href="Enemy.Enemy.html">Enemy.Enemy</a>]</td>
+<td><div class="info">
+<p><code class="code">increase_health t hp</code> will increase health <code class="code">hp</code> this enemy has</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.P.html#VALincrease_health">increase_health</a> [<a href="Player.P.html">Player.P</a>]</td>
+<td><div class="info">
+<p><code class="code">increase_health p h</code> increases player <code class="code">p</code>'s health by <code class="code">h</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.Player.html#VALincrease_health">increase_health</a> [<a href="Player.Player.html">Player.Player</a>]</td>
+<td><div class="info">
+<p><code class="code">increase_health p h</code> increases player <code class="code">p</code>'s health by <code class="code">h</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Enemy.EnemySig.html#VALincrease_level">increase_level</a> [<a href="Enemy.EnemySig.html">Enemy.EnemySig</a>]</td>
+<td><div class="info">
+<p><code class="code">increase_level t</code> will increase one level of enemy <code class="code">t</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Enemy.Enemy.html#VALincrease_level">increase_level</a> [<a href="Enemy.Enemy.html">Enemy.Enemy</a>]</td>
+<td><div class="info">
+<p><code class="code">increase_level t</code> will increase one level of enemy <code class="code">t</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Enemy.EnemySig.html#VALincrease_strength">increase_strength</a> [<a href="Enemy.EnemySig.html">Enemy.EnemySig</a>]</td>
+<td><div class="info">
+<p><code class="code">increase_strength t s</code> will increase strength <code class="code">s</code> to every skill
+     this enemy <code class="code">t</code> has</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Enemy.Enemy.html#VALincrease_strength">increase_strength</a> [<a href="Enemy.Enemy.html">Enemy.Enemy</a>]</td>
+<td><div class="info">
+<p><code class="code">increase_strength t s</code> will increase strength <code class="code">s</code> to every skill
+       this enemy <code class="code">t</code> has</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.P.html#VALincrease_strength">increase_strength</a> [<a href="Player.P.html">Player.P</a>]</td>
+<td><div class="info">
+<p><code class="code">increase_strength p s</code> increases player <code class="code">p</code>'s strength by <code class="code">s</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.Player.html#VALincrease_strength">increase_strength</a> [<a href="Player.Player.html">Player.Player</a>]</td>
+<td><div class="info">
+<p><code class="code">increase_strength p s</code> increases player <code class="code">p</code>'s strength by <code class="code">s</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALinfo_bar">info_bar</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">infor_bar</code> draws the info bar at lower right corner with string that is
+    stored in cplace.message_display</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALinit">init</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">init()</code> opens the graph and initialize map image resourse</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Engine.html#VALinit">init</a> [<a href="Engine.html">Engine</a>]</td>
+<td><div class="info">
+<p><code class="code">init ()</code> is the init state of the entire game.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALitem_check">item_check</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">item_check s i</code> checks if the <code class="code">i</code>th item in <code class="code">s</code> inventory
+    is empty or not;
+    Require: <code class="code">int</code> is a int that greater then or equal to 0 and less than 3
+    <code class="code">s</code> is "food" or "weapon"</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALitem_draw">item_draw</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">item_draw ()</code> draws items in inventory on the screen</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>K</div></td></tr>
+<tr><td><a href="Gui.html#VALksensor">ksensor</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">ksensor status</code> move the player according to key_pressed in <code class="code">status</code>
+    Requires: <code class="code">status</code> is a graphics.status</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>L</div></td></tr>
+<tr><td><a href="Map_builder.html#VALlake">lake</a> [<a href="Map_builder.html">Map_builder</a>]</td>
+<td><div class="info">
+<p><code class="code">lake</code> is the field for map with image "lake", it is going to be 
+    filled with Graphics.image</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALlblue">lblue</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">lblue</code> is color light blue</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.P.html#VALlevel">level</a> [<a href="Player.P.html">Player.P</a>]</td>
+<td><div class="info">
+<p><code class="code">level p</code> is the current level of player <code class="code">p</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.Player.html#VALlevel">level</a> [<a href="Player.Player.html">Player.Player</a>]</td>
+<td><div class="info">
+<p><code class="code">level p</code> is the current level of player <code class="code">p</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALlevel_mon">level_mon</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">level_mon()</code> check the player level draws a dialog box
+    when player got upgraded</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.P.html#VALlevel_up_expereince">level_up_expereince</a> [<a href="Player.P.html">Player.P</a>]</td>
+<td><div class="info">
+<p><code class="code">level_up_expereince p</code> is 
+      the experience required to level up player <code class="code">p</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.Player.html#VALlevel_up_expereince">level_up_expereince</a> [<a href="Player.Player.html">Player.Player</a>]</td>
+<td><div class="info">
+<p><code class="code">level_up_expereince p</code> is 
+        the experience required to level up player <code class="code">p</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Color_convert.html#VALlighting">lighting</a> [<a href="Color_convert.html">Color_convert</a>]</td>
+<td><div class="info">
+<p><code class="code">lighting</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"lighting"</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Color_convert.html#VALlist_color">list_color</a> [<a href="Color_convert.html">Color_convert</a>]</td>
+<td><div class="info">
+<p><code class="code">list_color l acc i</code> recursively converts each element of <code class="code">l</code> into 
+   an rgb matrix starting with an accumulator <code class="code">acc</code> and index <code class="code">i</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Engine.html#VALlist_of_entrance_loc_to_branch_map">list_of_entrance_loc_to_branch_map</a> [<a href="Engine.html">Engine</a>]</td>
+<td><div class="info">
+<p><code class="code">list_of_entrance_loc_to_branch_map s</code> is the list of entrance locations
+   to the branch map named <code class="code">s</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.P.html#VALlocation">location</a> [<a href="Player.P.html">Player.P</a>]</td>
+<td><div class="info">
+<p><code class="code">location p</code> is the current location of player <code class="code">p</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.Player.html#VALlocation">location</a> [<a href="Player.Player.html">Player.Player</a>]</td>
+<td><div class="info">
+<p><code class="code">location p</code> is the current location of player <code class="code">p</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Color_convert.html#VALlogo">logo</a> [<a href="Color_convert.html">Color_convert</a>]</td>
+<td><div class="info">
+<p><code class="code">logo</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"logo"</code></p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>M</div></td></tr>
+<tr><td><a href="Gui.html#VALmain">main</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">main()</code> is the main function during normal stage.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Builder.html#VALmain_engine_ememy_for_single_map">main_engine_ememy_for_single_map</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">main_engine_ememy_for_single_map locs num col row</code> returns an array 
+   of enemies parsed from reading the json files in this main directory that 
+   start with <code class="code">"enemy-"</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Builder.html#VALmain_engine_enemy">main_engine_enemy</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">main_engine_enemy map_locs loc_arr num_arr</code> reads all enemy json files in 
+   current directory with the corresponding locations in <code class="code">loc_arr</code> and 
+   numbers in <code class="code">num_arr</code>, and returns a mapped 2d array with this information</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Builder.html#VALmain_engine_food">main_engine_food</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">main_engine_food dims locs nums</code> calls <code class="code">main_engine_food_for_single_map</code> 
+   for each map dimension in <code class="code">dims</code>, location in <code class="code">locs</code>, and final number in 
+   <code class="code">nums</code>, and returns the mapped 2d food array with this information.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Builder.html#VALmain_engine_food_for_single_map">main_engine_food_for_single_map</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">main_engine_food_for_single_map locs num cols rows</code> reads the file 
+   <code class="code">"foods.json"</code> from the current directory, and returns the food array parsed 
+   from that file, with dimensions <code class="code">cols</code> by <code class="code">rows</code> and <code class="code">num</code> elements, 
+   without the locations in <code class="code">locs</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Builder.html#VALmain_engine_map_param">main_engine_map_param</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">main_engine_map_param ()</code> reads all files in the current directory 
+   with the format <code class="code">"map-param*.json"</code> where <code class="code">"*"</code> can be any string, 
+   and returns the parsed map representation.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Builder.html#VALmain_engine_player">main_engine_player</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">main_engine_player ()</code> is the main execution method for the 
+   constructing the main player, which gets returned at the end of this
+   function call.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Builder.html#VALmain_engine_weapon">main_engine_weapon</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">main_engine_weapon map_col_row_array loc_array final_number_array</code> calls 
+   <code class="code">main_engine_weapon_for_single_map</code> for each dimension in 
+   <code class="code">map_col_row_array</code>, each location in <code class="code">loc_array</code> 
+   and each final number in <code class="code">final_number_array</code>, and returns a proper 
+   2d weapon array with this information.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Builder.html#VALmain_engine_weapon_for_single_map">main_engine_weapon_for_single_map</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">main_engine_weapon_for_single_map locs cols rows num</code> reads the file 
+   <code class="code">"weapons.json"</code> in the current directory and returns the parsed weapon 
+   item array with dimensions <code class="code">cols</code> by <code class="code">rows</code> and <code class="code">num</code> elements, without
+   the locations in <code class="code">locs</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Builder.html#VALmain_map_col_row">main_map_col_row</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">main_map_col_row map_array</code> is the list of size dimensions of all the maps 
+   in <code class="code">map_array</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Builder.html#VALmain_map_instr">main_map_instr</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">main_map_instr</code> is the instruction in which the player has entered the 
+   main map.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Builder.html#VALmain_map_size_array">main_map_size_array</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">main_map_size_array map_array</code> is the list of total sizes 
+   (product of dimensions) of all the maps in <code class="code">map_array</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Maps.html#VALmap_constructor">map_constructor</a> [<a href="Maps.html">Maps</a>]</td>
+<td><div class="info">
+<p>Constructor of a map</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Builder.html#VALmap_param_array_builder">map_param_array_builder</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">map_param_array_builder j_arr flag</code> constructs a new map param array 
+   represented by the json array <code class="code">j_arr</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Map_builder.html#VALmap_size_cal">map_size_cal</a> [<a href="Map_builder.html">Map_builder</a>]</td>
+<td><div class="info">
+<p><code class="code">map_size_cal t</code> scales the size of the map model object <code class="code">t</code> 
+   to the size of the GUI screen and returns the dimensions of the 
+   scaled map w.r.t the GUI.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Map_builder.html#VALmap_text_build">map_text_build</a> [<a href="Map_builder.html">Map_builder</a>]</td>
+<td><div class="info">
+<p><code class="code">map_text_build ()</code> draws the map on the GUI based on the map params 
+   and returns <code class="code">()</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.P.html#VALmax_health">max_health</a> [<a href="Player.P.html">Player.P</a>]</td>
+<td><div class="info">
+<p><code class="code">max_health p</code> is the maximum health of a player <code class="code">p</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.Player.html#VALmax_health">max_health</a> [<a href="Player.Player.html">Player.Player</a>]</td>
+<td><div class="info">
+<p><code class="code">max_health p</code> is the maximum health of a player <code class="code">p</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Map_builder.html#VALmountain">mountain</a> [<a href="Map_builder.html">Map_builder</a>]</td>
+<td><div class="info">
+<p><code class="code">mountain</code> is the field for map with image "mountain", it is going to be 
+    filled with Graphics.image</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.Player.html#VALmove">move</a> [<a href="Player.Player.html">Player.Player</a>]</td>
+<td><div class="info">
+<p><code class="code">move p m col_diff row_diff</code> moves player <code class="code">t</code> to <code class="code">col_diff</code> right and
+      <code class="code">row_diff</code> up on map <code class="code">m</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.P.html#VALmove_down">move_down</a> [<a href="Player.P.html">Player.P</a>]</td>
+<td><div class="info">
+<p><code class="code">move_down p m</code> moves player <code class="code">p</code> to <code class="code">(col, row-1)</code> within the bounds
+     of map <code class="code">m</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.Player.html#VALmove_down">move_down</a> [<a href="Player.Player.html">Player.Player</a>]</td>
+<td><div class="info">
+<p><code class="code">move_down p m</code> moves player <code class="code">p</code> to <code class="code">(col, row-1)</code> within the bounds
+       of map <code class="code">m</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.P.html#VALmove_left">move_left</a> [<a href="Player.P.html">Player.P</a>]</td>
+<td><div class="info">
+<p><code class="code">move_left p m</code> moves player <code class="code">p</code> to <code class="code">(col-1, row)</code> within the bounds
+     of map <code class="code">m</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.Player.html#VALmove_left">move_left</a> [<a href="Player.Player.html">Player.Player</a>]</td>
+<td><div class="info">
+<p><code class="code">move_left p m</code> moves player <code class="code">p</code> to <code class="code">(col-1, row)</code> within the bounds
+       of map <code class="code">m</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Engine.html#VALmove_player_down">move_player_down</a> [<a href="Engine.html">Engine</a>]</td>
+<td><div class="info">
+<p><code class="code">move_player_down s</code> change the current pos (col', row') of player 
+    in state <code class="code">s</code> to (col', row'-1) within the map boundaries.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Engine.html#VALmove_player_left">move_player_left</a> [<a href="Engine.html">Engine</a>]</td>
+<td><div class="info">
+<p><code class="code">move_player_left s</code> change the current pos (col', row') of player 
+    in state <code class="code">s</code> to (col'-1, row') within the map boundaries.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Engine.html#VALmove_player_right">move_player_right</a> [<a href="Engine.html">Engine</a>]</td>
+<td><div class="info">
+<p><code class="code">move_player_right s</code> change the current pos (col', row') of player 
+    in state <code class="code">s</code> to (col'+1, row') within the map boundaries.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Engine.html#VALmove_player_up">move_player_up</a> [<a href="Engine.html">Engine</a>]</td>
+<td><div class="info">
+<p><code class="code">move_player_up s</code> change the current pos (col', row') of player 
+    in state <code class="code">s</code> to (col', row'+1) within the map boundaries.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.P.html#VALmove_right">move_right</a> [<a href="Player.P.html">Player.P</a>]</td>
+<td><div class="info">
+<p><code class="code">move_right p m</code> moves player <code class="code">p</code> to <code class="code">(col+1, row)</code> within the bounds
+     of map <code class="code">m</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.Player.html#VALmove_right">move_right</a> [<a href="Player.Player.html">Player.Player</a>]</td>
+<td><div class="info">
+<p><code class="code">move_right p m</code> moves player <code class="code">p</code> to <code class="code">(col+1, row)</code> within the bounds
+       of map <code class="code">m</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.P.html#VALmove_up">move_up</a> [<a href="Player.P.html">Player.P</a>]</td>
+<td><div class="info">
+<p><code class="code">move_up p m</code> moves player <code class="code">p</code> to <code class="code">(col, row+1)</code> within the bounds
+     of map <code class="code">m</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.Player.html#VALmove_up">move_up</a> [<a href="Player.Player.html">Player.Player</a>]</td>
+<td><div class="info">
+<p><code class="code">move_up p m</code> moves player <code class="code">p</code> to <code class="code">(col, row+1)</code> within the bounds
+       of map <code class="code">m</code>.</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>N</div></td></tr>
+<tr><td><a href="Gui.html#VALnormal_four_botton">normal_four_botton</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">normal_four_botton ()</code> draws the four botton at lower-right corner and
+    store the interactive event into cplace</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>O</div></td></tr>
+<tr><td><a href="Gui.html#VALorder_drop_helper">order_drop_helper</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">order_drop_helper()</code> drop the item that is stored in cplace</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALorder_helper">order_helper</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">order_helper c t</code> perform action according to <code class="code">c</code> and <code class="code">t</code>
+    Require: <code class="code">c</code> is one of "dialog","weapon","use" or "drop"
+    <code class="code">t</code> is a string</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALorder_pick_helper">order_pick_helper</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">order_drop_helper()</code> pick the item at player's location 
+    if invenotry is not full</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>P</div></td></tr>
+<tr><td><a href="Gui.html#VALparse">parse</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">parse c</code> is unit and it takes in trigger <code class="code">c</code> and perform
+    action on according to the trigger.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Builder.html#VALparse_dims">parse_dims</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">parse_dims s</code> parses <code class="code">s</code> and returns <code class="code">(col, row)</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Map_builder.html#VALpicture_getter">picture_getter</a> [<a href="Map_builder.html">Map_builder</a>]</td>
+<td><div class="info">
+<p><code class="code">picture_getter s</code> returns the image RGB matrix given by the 
+   picture name <code class="code">s</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Color_convert.html#VALplayer_in_combat">player_in_combat</a> [<a href="Color_convert.html">Color_convert</a>]</td>
+<td><div class="info">
+<p><code class="code">player_in_combat</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"player_combat"</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALplayer_reduce_health">player_reduce_health</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">get_player_experience ()</code> is the player's current experience</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Map_builder.html#VALportal">portal</a> [<a href="Map_builder.html">Map_builder</a>]</td>
+<td><div class="info">
+<p><code class="code">portal</code> is the field for portal, it is going to be 
+    filled with Graphics.image</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Color_convert.html#VALportal">portal</a> [<a href="Color_convert.html">Color_convert</a>]</td>
+<td><div class="info">
+<p><code class="code">portal</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"portal"</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Builder.html#VALprobability">probability</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">probabilty s</code> produces a bool based on probabilty <code class="code">s</code>
+   Requires:
+   <code class="code">s</code> mod 0.1.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Map_builder.html#VALpurple_red">purple_red</a> [<a href="Map_builder.html">Map_builder</a>]</td>
+<td><div class="info">
+<p><code class="code">purple_red</code> is color purple</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>R</div></td></tr>
+<tr><td><a href="Builder.html#VALrandom_choice">random_choice</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">random_choice lst</code> is a random object chosen from list <code class="code">lst</code>
+   Requires:
+   <code class="code">lst</code> cannot be empty</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Builder.html#VALrandom_int_array_for_enemies_and_items">random_int_array_for_enemies_and_items</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">random_int_array_for_enemies_and_items arr num</code> returns a 
+   probability-driven random int array with the number <code class="code">num</code> and the 
+   location array <code class="code">arr</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Builder.html#VALrandom_list_with_fixed_length">random_list_with_fixed_length</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">random_list_with_fixed_length lst len</code> is a randomly chosen list
+   with length <code class="code">len</code> and its elements from <code class="code">lst</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.P.html#VALreduce_health">reduce_health</a> [<a href="Player.P.html">Player.P</a>]</td>
+<td><div class="info">
+<p><code class="code">reduce_health p h</code> reduces the health of player <code class="code">p</code> by <code class="code">h</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.Player.html#VALreduce_health">reduce_health</a> [<a href="Player.Player.html">Player.Player</a>]</td>
+<td><div class="info">
+<p><code class="code">reduce_health p h</code> reduces the health of player <code class="code">p</code> by <code class="code">h</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Enemy.EnemySig.html#VALreduce_hp">reduce_hp</a> [<a href="Enemy.EnemySig.html">Enemy.EnemySig</a>]</td>
+<td><div class="info">
+<p><code class="code">reduce_hp e d</code> reduces the enemy's hp amount by <code class="code">d</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Enemy.Enemy.html#VALreduce_hp">reduce_hp</a> [<a href="Enemy.Enemy.html">Enemy.Enemy</a>]</td>
+<td><div class="info">
+<p><code class="code">reduce_hp e d</code> reduces the enemy's hp amount by <code class="code">d</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Engine.html#VALreduce_player_health">reduce_player_health</a> [<a href="Engine.html">Engine</a>]</td>
+<td><div class="info">
+<p><code class="code">reduce_player_health s hp</code> reduces the health of player at state <code class="code">s</code> by 
+   <code class="code">hp</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.P.html#VALreduce_strength">reduce_strength</a> [<a href="Player.P.html">Player.P</a>]</td>
+<td><div class="info">
+<p><code class="code">reduce_strength p s</code> reduces the strength of player <code class="code">p</code> by <code class="code">s</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.Player.html#VALreduce_strength">reduce_strength</a> [<a href="Player.Player.html">Player.Player</a>]</td>
+<td><div class="info">
+<p><code class="code">reduce_strength p s</code> reduces the strength of player <code class="code">p</code> by <code class="code">s</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Builder.html#VALreformat_output_map">reformat_output_map</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">reformat_output_map comb_list</code> is the array representation of 
+   <code class="code">comb_list</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALrefresh_draw">refresh_draw</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">refresh_draw()</code> draw important information during Normal stage</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.P.html#VALrow">row</a> [<a href="Player.P.html">Player.P</a>]</td>
+<td><div class="info">
+<p><code class="code">row p</code> is the current row coordinate of player <code class="code">p</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.Player.html#VALrow">row</a> [<a href="Player.Player.html">Player.Player</a>]</td>
+<td><div class="info">
+<p><code class="code">row p</code> is the current row coordinate of player <code class="code">p</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Main.html#VALrun">run</a> [<a href="Main.html">Main</a>]</td>
+<td></td></tr>
+<tr><td align="left"><div>S</div></td></tr>
+<tr><td><a href="Color_convert.html#VALsand_120">sand_120</a> [<a href="Color_convert.html">Color_convert</a>]</td>
+<td><div class="info">
+<p><code class="code">sand_120</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"sand-120"</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Weapons.W.html#VALset_loc">set_loc</a> [<a href="Weapons.W.html">Weapons.W</a>]</td>
+<td><div class="info">
+<p><code class="code">set_loc w loc</code> sets the location of the weapon <code class="code">w</code> to <code class="code">loc</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Weapons.Weapon.html#VALset_loc">set_loc</a> [<a href="Weapons.Weapon.html">Weapons.Weapon</a>]</td>
+<td><div class="info">
+<p><code class="code">set_loc w loc</code> sets the location of the weapon <code class="code">w</code> to <code class="code">loc</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Foods.F.html#VALset_loc">set_loc</a> [<a href="Foods.F.html">Foods.F</a>]</td>
+<td><div class="info">
+<p><code class="code">set_loc f loc</code> sets the location of the food <code class="code">f</code> to <code class="code">loc</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Foods.Food.html#VALset_loc">set_loc</a> [<a href="Foods.Food.html">Foods.Food</a>]</td>
+<td><div class="info">
+<p><code class="code">set_loc f loc</code> sets the location of the food <code class="code">f</code> to <code class="code">loc</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Builder.html#VALsingle_enemy_builder">single_enemy_builder</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">single_enemy_builder j (col, row)</code> constructs a new enemy represented 
+   by the json <code class="code">j</code> at location <code class="code">(col, row)</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Maps.MP.html#VALsingle_map_element_constructor">single_map_element_constructor</a> [<a href="Maps.MP.html">Maps.MP</a>]</td>
+<td><div class="info">
+<p>Constructor of a map param</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Maps.MapParam.html#VALsingle_map_element_constructor">single_map_element_constructor</a> [<a href="Maps.MapParam.html">Maps.MapParam</a>]</td>
+<td><div class="info">
+<p>Constructor of a map param</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Enemy.EnemySig.html#VALsingle_skill_constructor">single_skill_constructor</a> [<a href="Enemy.EnemySig.html">Enemy.EnemySig</a>]</td>
+<td><div class="info">
+<p><code class="code">single_skill_constructor n s p</code> constructs a new skill with the name 
+     <code class="code">n</code>, strength <code class="code">s</code> and skill probability <code class="code">p</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Enemy.Enemy.html#VALsingle_skill_constructor">single_skill_constructor</a> [<a href="Enemy.Enemy.html">Enemy.Enemy</a>]</td>
+<td><div class="info">
+<p><code class="code">single_skill_constructor n s p</code> constructs a new skill with the name 
+       <code class="code">n</code>, strength <code class="code">s</code> and skill probability <code class="code">p</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Maps.html#VALsize">size</a> [<a href="Maps.html">Maps</a>]</td>
+<td><div class="info">
+<p><code class="code">size m</code> is the size of map <code class="code">m</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.P.html#VALskill_constructor">skill_constructor</a> [<a href="Player.P.html">Player.P</a>]</td>
+<td><div class="info">
+<p><code class="code">skill_constructor p n d s</code> adds a skill to player <code class="code">p</code> with 
+      name <code class="code">n</code>, description <code class="code">d</code> and strength <code class="code">s</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.Player.html#VALskill_constructor">skill_constructor</a> [<a href="Player.Player.html">Player.Player</a>]</td>
+<td><div class="info">
+<p><code class="code">skill_constructor n d s</code> constructs a new skill of 
+      strength <code class="code">s</code>, name <code class="code">n</code>, description <code class="code">d</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALskill_damage">skill_damage</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">skill_damage name</code> is the int that is the strength of skill with <code class="code">name</code>
+    or 0 if there is no skill with <code class="code">name</code>
+    Require: <code class="code">name</code> is a string</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.P.html#VALskill_description">skill_description</a> [<a href="Player.P.html">Player.P</a>]</td>
+<td><div class="info">
+<p><code class="code">skill_description s</code> is the description of the skill <code class="code">s</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.Player.html#VALskill_description">skill_description</a> [<a href="Player.Player.html">Player.Player</a>]</td>
+<td><div class="info">
+<p><code class="code">skill_description s</code> is the description of the skill <code class="code">s</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALskill_helper">skill_helper</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">skill_helper name</code> draws the image of skill with <code class="code">name</code> and 
+    reduce the health of enemy that is stpred in cplace according to the 
+    strength of the skill
+    Require: <code class="code">name</code> is a string</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALskill_image">skill_image</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">skill_image name</code> draws the image representing skill with <code class="code">name</code>
+    on the screen
+    Requires: <code class="code">name</code> is a vaild player skill name</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALskill_info_helper">skill_info_helper</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">skill_info_helper ()</code> draws all the information bars needed on the screen 
+    including the enemy and the player during combat stage</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALskill_mon">skill_mon</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">skill_mon()</code> check the  
+    player skill and update it in cplace</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.P.html#VALskill_name">skill_name</a> [<a href="Player.P.html">Player.P</a>]</td>
+<td><div class="info">
+<p><code class="code">skill_name s</code> is the name of the skill <code class="code">s</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.Player.html#VALskill_name">skill_name</a> [<a href="Player.Player.html">Player.Player</a>]</td>
+<td><div class="info">
+<p><code class="code">skill_name s</code> is the name of the skill <code class="code">s</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.P.html#VALskill_strength">skill_strength</a> [<a href="Player.P.html">Player.P</a>]</td>
+<td><div class="info">
+<p><code class="code">skill_strength s</code> is the strength of the skill <code class="code">s</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.Player.html#VALskill_strength">skill_strength</a> [<a href="Player.Player.html">Player.Player</a>]</td>
+<td><div class="info">
+<p><code class="code">skill_strength s</code> is the strength of the skill <code class="code">s</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Map_builder.html#VALsnow">snow</a> [<a href="Map_builder.html">Map_builder</a>]</td>
+<td><div class="info">
+<p><code class="code">snow</code> is the field for map with image "snow", it is going to be 
+    filled with Graphics.image</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Color_convert.html#VALsnow_120">snow_120</a> [<a href="Color_convert.html">Color_convert</a>]</td>
+<td><div class="info">
+<p><code class="code">snow_120</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"snow-120"</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Builder.html#VALsorted_list">sorted_list</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">sorted_list locs col row n</code> is <code class="code">List.rev [(col, row), (col-1, row), ... , 
+   (1, row), (col, row-1), (col-1, row-1), ...]</code> containing <code class="code">n</code> elements,
+   where none of the coordinates in <code class="code">locs</code> get appended.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALstatus_bar">status_bar</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">status_bar ()</code> displays the player and his level on the given window</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Color_convert.html#VALstone_120">stone_120</a> [<a href="Color_convert.html">Color_convert</a>]</td>
+<td><div class="info">
+<p><code class="code">stone_120</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"stone-120"</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Enemy.EnemySig.html#VALstrengthen">strengthen</a> [<a href="Enemy.EnemySig.html">Enemy.EnemySig</a>]</td>
+<td><div class="info">
+<p><code class="code">strengthen t</code> will increase the health, strength, and level of this
+     enemy</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Enemy.Enemy.html#VALstrengthen">strengthen</a> [<a href="Enemy.Enemy.html">Enemy.Enemy</a>]</td>
+<td><div class="info">
+<p><code class="code">strengthen t</code> will increase the health, strength, and level of this
+       enemy</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Engine.html#VALstrengthen_whole_map">strengthen_whole_map</a> [<a href="Engine.html">Engine</a>]</td>
+<td><div class="info">
+<p><code class="code">strengthen_whole_map s</code> will strengthen every living enemy in all maps in
+   state <code class="code">s</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALstring_cal">string_cal</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">string_cal text tcolor x y w h</code>
+   prints text with <code class="code">color</code> and text-color <code class="code">tcolor</code> in the center of the box
+    with lower-left point at <code class="code">x,y</code> and with width<code class="code">w</code> height <code class="code">h</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Builder.html#VALstring_of_loc">string_of_loc</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">string_of_loc (col,row)</code> is <code class="code">" (col, row) "</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Color_convert.html#VALstring_tolll">string_tolll</a> [<a href="Color_convert.html">Color_convert</a>]</td>
+<td><div class="info">
+<p><code class="code">string_tolll m</code> is <code class="code">m</code> in a 3d list representation.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.P.html#VALswitch_loc">switch_loc</a> [<a href="Player.P.html">Player.P</a>]</td>
+<td><div class="info">
+<p><code class="code">switch_loc p loc</code> changes the location of player <code class="code">p</code> to <code class="code">loc</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.Player.html#VALswitch_loc">switch_loc</a> [<a href="Player.Player.html">Player.Player</a>]</td>
+<td><div class="info">
+<p><code class="code">switch_loc p loc</code> changes the location of player <code class="code">p</code> to <code class="code">loc</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Color_convert.html#VALsword_80">sword_80</a> [<a href="Color_convert.html">Color_convert</a>]</td>
+<td><div class="info">
+<p><code class="code">coffee_80</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"coffee-80"</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Builder.html#VALsys_json">sys_json</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">sys_json</code> is the json that represent file "instr.json"</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Builder.html#VALsystem_instr">system_instr</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">system_instr s</code> is the instruction to the player at state <code class="code">s</code></p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>T</div></td></tr>
+<tr><td><a href="Engine.html#VALtake_one_food">take_one_food</a> [<a href="Engine.html">Engine</a>]</td>
+<td><div class="info">
+<p><code class="code">take_one_food s</code> takes food from the player's current location at state
+   <code class="code">s</code>, if any, and adds it to the first empty slot in the player's food 
+   inventory.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Engine.html#VALtake_one_food_in_current_location">take_one_food_in_current_location</a> [<a href="Engine.html">Engine</a>]</td>
+<td><div class="info">
+<p><code class="code">take_one_food_in_current_location s</code> takes food on player's current 
+   location at state <code class="code">s</code>,  if any, to the first empty slot in player's food 
+   inventory.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALtext_draw_dialog">text_draw_dialog</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">text_draw_dialog text</code> draws a text box with <code class="code">text</code> on the given window</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Map_builder.html#VALtext_init">text_init</a> [<a href="Map_builder.html">Map_builder</a>]</td>
+<td><div class="info">
+<p><code class="code">text_init()</code> loads the graphics data for map
+    Require: graph must be opened</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Color_convert.html#VALthe_goblin">the_goblin</a> [<a href="Color_convert.html">Color_convert</a>]</td>
+<td><div class="info">
+<p><code class="code">the_goblin</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"goblin"</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Color_convert.html#VALthe_minion">the_minion</a> [<a href="Color_convert.html">Color_convert</a>]</td>
+<td><div class="info">
+<p><code class="code">the_minion</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"minion"</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Color_convert.html#VALthe_player">the_player</a> [<a href="Color_convert.html">Color_convert</a>]</td>
+<td><div class="info">
+<p><code class="code">the_player</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"player"</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Color_convert.html#VALthe_stab">the_stab</a> [<a href="Color_convert.html">Color_convert</a>]</td>
+<td><div class="info">
+<p><code class="code">the_stab</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"stab"</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Color_convert.html#VALthe_witch">the_witch</a> [<a href="Color_convert.html">Color_convert</a>]</td>
+<td><div class="info">
+<p><code class="code">the_witch</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"witch"</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Engine.html#VALtransfer_player_to_branch_map">transfer_player_to_branch_map</a> [<a href="Engine.html">Engine</a>]</td>
+<td><div class="info">
+<p><code class="code">transfer_player_to_branch_map s</code> transfers the player at state <code class="code">s</code> to the
+   branch map.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Engine.html#VALtransfer_player_to_main_map">transfer_player_to_main_map</a> [<a href="Engine.html">Engine</a>]</td>
+<td><div class="info">
+<p><code class="code">transfer_player_to_main_map s</code> transfers the player at state <code class="code">s</code> to the 
+   main map and changes to the corresponding configurations in the map.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Color_convert.html#VALtrial">trial</a> [<a href="Color_convert.html">Color_convert</a>]</td>
+<td><div class="info">
+<p><code class="code">trial</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"trial"</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALtsensor">tsensor</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">tsensor ()</code> pause the game until user press his/her mouse botton</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>U</div></td></tr>
+<tr><td><a href="Builder.html#VALunique_location_list">unique_location_list</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">unique_location_list locs col row n</code> returns <code class="code">sorted_list col row n</code> if 
+   <code class="code">col &lt; n/2</code> or <code class="code">row &lt; n/2</code>, otherwise it returns a randomly constructed
+   set-like list of <code class="code">(col, row)</code> coordinates with length <code class="code">n</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Builder.html#VALupdate_branch_map_store">update_branch_map_store</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">update_branch_map_store (l,n)</code> updates <code class="code">branch_map_store</code> by 
+   appending <code class="code">(l,n)</code> to the front of the list referenced 
+   by <code class="code">branch_map_store</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.P.html#VALupdate_skill">update_skill</a> [<a href="Player.P.html">Player.P</a>]</td>
+<td><div class="info">
+<p><code class="code">update_skill p lst</code> appends the new skill list <code class="code">lst</code> to the existing
+     skills repertoire of player <code class="code">p</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.Player.html#VALupdate_skill">update_skill</a> [<a href="Player.Player.html">Player.Player</a>]</td>
+<td><div class="info">
+<p><code class="code">update_skill p lst</code> appends the new skill list <code class="code">lst</code> to the existing
+      skills repertoire of player <code class="code">p</code></p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>W</div></td></tr>
+<tr><td><a href="Color_convert.html#VALwater_120">water_120</a> [<a href="Color_convert.html">Color_convert</a>]</td>
+<td><div class="info">
+<p><code class="code">water_120</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"water-120"</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Builder.html#VALweapon_array_builder">weapon_array_builder</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">weapon_array_builder locs cols rows j_arr</code> constructs a new weapon array 
+   represented by the json array <code class="code">j_arr</code> with the dimensions <code class="code">cols</code> by <code class="code">rows</code>, 
+   without the locations in <code class="code">locs</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALweapon_check">weapon_check</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">weapon_check i</code> checks if the <code class="code">i</code>th item in weapon inventory
+    is empty or not;if not <code class="code">weapon_check</code> 
+    update the item_selected field to the item in the cplace
+    Require: <code class="code">int</code> is a int that greater then or equal to 0 and less than 3</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALweapon_full_mon">weapon_full_mon</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">weapon_full_mon ()</code> is true if weapon inventory is full;
+    false if not full</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Builder.html#VALweapon_instr">weapon_instr</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">weapon_instr s</code> is the instruction regarding weapons at state <code class="code">s</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Builder.html#VALweapon_instr_helper">weapon_instr_helper</a> [<a href="Builder.html">Builder</a>]</td>
+<td><div class="info">
+<p><code class="code">weapon_instr_helper s store</code> loads the instruction regarding weapons at 
+   state <code class="code">s</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALwhitebox_draw">whitebox_draw</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">whitebox_draw a b c d width</code> draws a whitebox with lowerleft point at <code class="code">a,b</code>
+    and upperright point at <code class="code">c,d</code> with linewidth <code class="code">width</code>
+    Require: <code class="code">a b c d width</code> are non-negative ints</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gui.html#VALwin_mon">win_mon</a> [<a href="Gui.html">Gui</a>]</td>
+<td><div class="info">
+<p><code class="code">win_mon()</code> checks the winning condition fo the game and shut the game down
+    when the condition is satisfied</p>
+
+</div>
+</td></tr>
+</table>
+</body>
+</html>

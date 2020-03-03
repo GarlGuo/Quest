@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link rel="previous" href="Weapons.html">
+<link rel="next" href="Enemy.html">
+<link rel="Up" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Index of module types" rel=Appendix href="index_module_types.html">
+<link title="Engine" rel="Chapter" href="Engine.html">
+<link title="Player" rel="Chapter" href="Player.html">
+<link title="Foods" rel="Chapter" href="Foods.html">
+<link title="Weapons" rel="Chapter" href="Weapons.html">
+<link title="Maps" rel="Chapter" href="Maps.html">
+<link title="Enemy" rel="Chapter" href="Enemy.html">
+<link title="Color_convert" rel="Chapter" href="Color_convert.html">
+<link title="Map_builder" rel="Chapter" href="Map_builder.html">
+<link title="Gui" rel="Chapter" href="Gui.html">
+<link title="Builder" rel="Chapter" href="Builder.html">
+<link title="Main" rel="Chapter" href="Main.html"><title>Maps</title>
+</head>
+<body>
+<div class="navbar"><a class="pre" href="Weapons.html" title="Weapons">Previous</a>
+&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;<a class="post" href="Enemy.html" title="Enemy">Next</a>
+</div>
+<h1>Module <a href="type_Maps.html">Maps</a></h1>
+
+<pre><span id="MODULEMaps"><span class="keyword">module</span> Maps</span>: <code class="code">sig</code> <a href="Maps.html">..</a> <code class="code">end</code></pre><div class="info module top">
+<div class="info-desc">
+<p><code class="code">MP</code> is the interace for maps</p>
+</div>
+</div>
+<hr width="100%">
+
+<pre><span id="MODULETYPEMP"><span class="keyword">module type</span> <a href="Maps.MP.html">MP</a></span> = <code class="code">sig</code> <a href="Maps.MP.html">..</a> <code class="code">end</code></pre>
+<pre><span id="MODULEMapParam"><span class="keyword">module</span> <a href="Maps.MapParam.html">MapParam</a></span>: <code class="code">sig</code> <a href="Maps.MapParam.html">..</a> <code class="code">end</code></pre>
+<pre><code><span id="TYPEt"><span class="keyword">type</span> <code class="type"></code>t</span> = {</code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTt.size">size</span>&nbsp;: <code class="type">int * int</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTt.name">name</span>&nbsp;: <code class="type">string</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTt.map_params">map_params</span>&nbsp;: <code class="type">((int * int) * MapParam.map_param) list</code>;</code></td>
+
+</tr></table>
+}
+
+<div class="info ">
+<div class="info-desc">
+<p>The abstract type of values representing a map.</p>
+</div>
+</div>
+
+
+<pre><span id="VALmap_constructor"><span class="keyword">val</span> map_constructor</span> : <code class="type">size:int * int -><br>       name:string -><br>       all_map_param:((int * int) * MapParam.map_param) list -> <a href="Maps.html#TYPEt">t</a></code></pre><div class="info ">
+<div class="info-desc">
+<p>Constructor of a map</p>
+</div>
+</div>
+
+<pre><span id="VALsize"><span class="keyword">val</span> size</span> : <code class="type"><a href="Maps.html#TYPEt">t</a> -> int * int</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">size m</code> is the size of map <code class="code">m</code></p>
+</div>
+</div>
+
+<pre><span id="VALbound_check"><span class="keyword">val</span> bound_check</span> : <code class="type"><a href="Maps.html#TYPEt">t</a> -> int -> int -> bool</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">bound_check m c r</code> returns whether column <code class="code">c</code> and row <code class="code">r</code> satisfy 
+   is within the bounds of the map <code class="code">m</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALget_one_map_param_by_loc"><span class="keyword">val</span> get_one_map_param_by_loc</span> : <code class="type"><a href="Maps.html#TYPEt">t</a> -> int * int -> MapParam.map_param</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_one_map_param_by_loc t loc</code> returns the map param at location <code class="code">loc</code> 
+   in map <code class="code">t</code>. 
+   Raises: <code class="code">Failure</code> if <code class="code">loc</code> is out of bounds with respect to map <code class="code">t</code></p>
+</div>
+</div>
+
+<pre><span id="VALget_one_link_by_loc"><span class="keyword">val</span> get_one_link_by_loc</span> : <code class="type"><a href="Maps.html#TYPEt">t</a> -> int * int -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_one_link_by_loc t loc</code> returns the link of the map param 
+   at location <code class="code">loc</code> in map <code class="code">t</code>. 
+   Raises: <code class="code">Failure</code> if <code class="code">loc</code> is out of bounds with respect to map <code class="code">t</code></p>
+</div>
+</div>
+</body></html>

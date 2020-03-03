@@ -1,0 +1,340 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link rel="previous" href="Enemy.html">
+<link rel="next" href="Map_builder.html">
+<link rel="Up" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Index of module types" rel=Appendix href="index_module_types.html">
+<link title="Engine" rel="Chapter" href="Engine.html">
+<link title="Player" rel="Chapter" href="Player.html">
+<link title="Foods" rel="Chapter" href="Foods.html">
+<link title="Weapons" rel="Chapter" href="Weapons.html">
+<link title="Maps" rel="Chapter" href="Maps.html">
+<link title="Enemy" rel="Chapter" href="Enemy.html">
+<link title="Color_convert" rel="Chapter" href="Color_convert.html">
+<link title="Map_builder" rel="Chapter" href="Map_builder.html">
+<link title="Gui" rel="Chapter" href="Gui.html">
+<link title="Builder" rel="Chapter" href="Builder.html">
+<link title="Main" rel="Chapter" href="Main.html"><title>Color_convert</title>
+</head>
+<body>
+<div class="navbar"><a class="pre" href="Enemy.html" title="Enemy">Previous</a>
+&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;<a class="post" href="Map_builder.html" title="Map_builder">Next</a>
+</div>
+<h1>Module <a href="type_Color_convert.html">Color_convert</a></h1>
+
+<pre><span id="MODULEColor_convert"><span class="keyword">module</span> Color_convert</span>: <code class="code">sig</code> <a href="Color_convert.html">..</a> <code class="code">end</code></pre><hr width="100%">
+
+<pre><code><span id="TYPEoimage"><span class="keyword">type</span> <code class="type"></code>oimage</span> = {</code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELToimage.name">name</span>&nbsp;: <code class="type">string</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELToimage.matrix">matrix</span>&nbsp;: <code class="type">int list list list</code>;</code></td>
+
+</tr></table>
+}
+
+<div class="info ">
+<div class="info-desc">
+<p>The abstract type of values representing an image with image json data</p>
+</div>
+</div>
+
+
+<pre><code><span id="TYPEimages"><span class="keyword">type</span> <code class="type"></code>images</span> = {</code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTimages.one_image">one_image</span>&nbsp;: <code class="type"><a href="Color_convert.html#TYPEoimage">oimage</a> list</code>;</code></td>
+
+</tr></table>
+}
+
+<div class="info ">
+<div class="info-desc">
+<p>The abstract type of values representing multiple images</p>
+</div>
+</div>
+
+
+<pre><code><span id="TYPEeimage"><span class="keyword">type</span> <code class="type"></code>eimage</span> = {</code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTeimage.name_data">name_data</span>&nbsp;: <code class="type">string</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTeimage.image_data">image_data</span>&nbsp;: <code class="type">Graphics.color array array</code>;</code></td>
+
+</tr></table>
+}
+
+<div class="info ">
+<div class="info-desc">
+<p>The abstract type of values representing an image with RGB data</p>
+</div>
+</div>
+
+
+<pre><span id="VALlist_color"><span class="keyword">val</span> list_color</span> : <code class="type">int list list list -><br>       Graphics.color array array -> int -> Graphics.color array array</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">list_color l acc i</code> recursively converts each element of <code class="code">l</code> into 
+   an rgb matrix starting with an accumulator <code class="code">acc</code> and index <code class="code">i</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALarray_color"><span class="keyword">val</span> array_color</span> : <code class="type">int list list list -> Graphics.color array array</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">array_color l</code> converts the image json data <code class="code">l</code> into an rgb matrix <code class="code">m</code>, 
+   and returns <code class="code">m</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALstring_tolll"><span class="keyword">val</span> string_tolll</span> : <code class="type">Yojson.Basic.t -> int list list list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">string_tolll m</code> is <code class="code">m</code> in a 3d list representation.</p>
+</div>
+</div>
+
+<pre><span id="VALimage_of_images"><span class="keyword">val</span> image_of_images</span> : <code class="type">Yojson.Basic.t -> <a href="Color_convert.html#TYPEoimage">oimage</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">image_of_images i</code> is the image that <code class="code">i</code> represents
+   Requires: <code class="code">i</code> is a valid JSON image representation.</p>
+</div>
+</div>
+
+<pre><span id="VALimages_of_json"><span class="keyword">val</span> images_of_json</span> : <code class="type">Yojson.Basic.t -> <a href="Color_convert.html#TYPEoimage">oimage</a> list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">images_of_json j</code> is the image list that <code class="code">j</code> represents
+   Requires: <code class="code">j</code> is a valid JSON image list representation.</p>
+</div>
+</div>
+
+<pre><span id="VALimage_convert"><span class="keyword">val</span> image_convert</span> : <code class="type">string -> string -> Graphics.color array array</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">image_convert json name</code> is the color matrix in file <code class="code">json</code>
+    with <code class="code">name</code>
+    Requires: <code class="code">json</code> is a vaild json file
+    <code class="code">name</code> is a vaild name in <code class="code">json</code></p>
+</div>
+</div>
+
+<pre><span id="VALenemy_punch"><span class="keyword">val</span> enemy_punch</span> : <code class="type">Graphics.color array array</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">enemy_punch</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"stab"</code></p>
+</div>
+</div>
+
+<pre><span id="VALenemy_scar"><span class="keyword">val</span> enemy_scar</span> : <code class="type">Graphics.color array array</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">enemy_scar</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"scar-200"</code></p>
+</div>
+</div>
+
+<pre><span id="VALcute_cat"><span class="keyword">val</span> cute_cat</span> : <code class="type">Graphics.color array array</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">cute_cat</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"cute cat"</code></p>
+</div>
+</div>
+
+<pre><span id="VALthe_player"><span class="keyword">val</span> the_player</span> : <code class="type">Graphics.color array array</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">the_player</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"player"</code></p>
+</div>
+</div>
+
+<pre><span id="VALthe_minion"><span class="keyword">val</span> the_minion</span> : <code class="type">Graphics.color array array</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">the_minion</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"minion"</code></p>
+</div>
+</div>
+
+<pre><span id="VALplayer_in_combat"><span class="keyword">val</span> player_in_combat</span> : <code class="type">Graphics.color array array</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">player_in_combat</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"player_combat"</code></p>
+</div>
+</div>
+
+<pre><span id="VALthe_stab"><span class="keyword">val</span> the_stab</span> : <code class="type">Graphics.color array array</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">the_stab</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"stab"</code></p>
+</div>
+</div>
+
+<pre><span id="VALsand_120"><span class="keyword">val</span> sand_120</span> : <code class="type">Graphics.color array array</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">sand_120</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"sand-120"</code></p>
+</div>
+</div>
+
+<pre><span id="VALgrass_120"><span class="keyword">val</span> grass_120</span> : <code class="type">Graphics.color array array</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">grass_120</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"grass-120"</code></p>
+</div>
+</div>
+
+<pre><span id="VALstone_120"><span class="keyword">val</span> stone_120</span> : <code class="type">Graphics.color array array</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">stone_120</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"stone-120"</code></p>
+</div>
+</div>
+
+<pre><span id="VALsnow_120"><span class="keyword">val</span> snow_120</span> : <code class="type">Graphics.color array array</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">snow_120</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"snow-120"</code></p>
+</div>
+</div>
+
+<pre><span id="VALwater_120"><span class="keyword">val</span> water_120</span> : <code class="type">Graphics.color array array</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">water_120</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"water-120"</code></p>
+</div>
+</div>
+
+<pre><span id="VALdirt_120"><span class="keyword">val</span> dirt_120</span> : <code class="type">Graphics.color array array</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">dirt_120</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"dirt-120"</code></p>
+</div>
+</div>
+
+<pre><span id="VALbread_80"><span class="keyword">val</span> bread_80</span> : <code class="type">Graphics.color array array</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">bread_80</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"bread_80"</code></p>
+</div>
+</div>
+
+<pre><span id="VALcoffee_80"><span class="keyword">val</span> coffee_80</span> : <code class="type">Graphics.color array array</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">coffee_80</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"coffee_80"</code></p>
+</div>
+</div>
+
+<pre><span id="VALsword_80"><span class="keyword">val</span> sword_80</span> : <code class="type">Graphics.color array array</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">coffee_80</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"coffee-80"</code></p>
+</div>
+</div>
+
+<pre><span id="VALdagger_80"><span class="keyword">val</span> dagger_80</span> : <code class="type">Graphics.color array array</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">dagger_80</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"dagger_80"</code></p>
+</div>
+</div>
+
+<pre><span id="VALthe_goblin"><span class="keyword">val</span> the_goblin</span> : <code class="type">Graphics.color array array</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">the_goblin</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"goblin"</code></p>
+</div>
+</div>
+
+<pre><span id="VALthe_witch"><span class="keyword">val</span> the_witch</span> : <code class="type">Graphics.color array array</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">the_witch</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"witch"</code></p>
+</div>
+</div>
+
+<pre><span id="VALfireball"><span class="keyword">val</span> fireball</span> : <code class="type">Graphics.color array array</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">fireball</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"fireball"</code></p>
+</div>
+</div>
+
+<pre><span id="VALcurse"><span class="keyword">val</span> curse</span> : <code class="type">Graphics.color array array</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">curse</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"curse"</code></p>
+</div>
+</div>
+
+<pre><span id="VALportal"><span class="keyword">val</span> portal</span> : <code class="type">Graphics.color array array</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">portal</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"portal"</code></p>
+</div>
+</div>
+
+<pre><span id="VALhit"><span class="keyword">val</span> hit</span> : <code class="type">Graphics.color array array</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">hit</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"hit"</code></p>
+</div>
+</div>
+
+<pre><span id="VALfire"><span class="keyword">val</span> fire</span> : <code class="type">Graphics.color array array</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">fire</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"fore"</code></p>
+</div>
+</div>
+
+<pre><span id="VALtrial"><span class="keyword">val</span> trial</span> : <code class="type">Graphics.color array array</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">trial</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"trial"</code></p>
+</div>
+</div>
+
+<pre><span id="VALlighting"><span class="keyword">val</span> lighting</span> : <code class="type">Graphics.color array array</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">lighting</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"lighting"</code></p>
+</div>
+</div>
+
+<pre><span id="VALlogo"><span class="keyword">val</span> logo</span> : <code class="type">Graphics.color array array</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">logo</code> is the RGB color 2d matrix represented by the image 
+   <code class="code">"logo"</code></p>
+</div>
+</div>
+
+<pre><span id="VALenemy_data"><span class="keyword">val</span> enemy_data</span> : <code class="type"><a href="Color_convert.html#TYPEeimage">eimage</a> list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">enemy_data</code> is the list that contains a single <code class="code">eimage</code> with the minion 
+   image.</p>
+</div>
+</div>
+</body></html>
